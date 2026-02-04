@@ -1,6 +1,19 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
+
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE junk
+.idea/
+.vscode/
+*.code-workspace
+*.sln.iml
+
+
 #
 .utmp/
 /[Ll]ibrary/
