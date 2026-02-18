@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class WorkerView : MonoBehaviour
+public class Worker : MonoBehaviour
 {
     //public Sprite portraitSprite;
     private SpriteRenderer spriteRenderer;
+    public WorkerData workerdata;
 
     public void Show(WorkerData data)
     {
@@ -16,17 +17,5 @@ public class WorkerView : MonoBehaviour
     public void Hide()
     {
         spriteRenderer.sprite = null;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
