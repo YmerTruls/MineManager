@@ -65,7 +65,8 @@ public class TypewriterEffect : MonoBehaviour
             _textBox.maxVisibleCharacters++;
 
             if (character == '?' || character == '.' || character == ',' ||
-                character == ';' || character == '!' || character == '-')
+                character == ';' || character == '!' || character == '-' ||
+                character == '\n')
             {
                 yield return _interpunctionDelay;
             }
