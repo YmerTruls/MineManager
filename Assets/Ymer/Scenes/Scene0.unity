@@ -1093,9 +1093,9 @@ MonoBehaviour:
     m_Options:
     - m_Text: Option A
       m_Image: {fileID: 0}
-    - m_Text: Option B
+    - m_Text: Scene 1
       m_Image: {fileID: 0}
-    - m_Text: Option C
+    - m_Text: Scene 2
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
