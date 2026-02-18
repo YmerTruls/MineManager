@@ -1,14 +1,14 @@
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum ResourceType { Iron, Coal, Gold }
-
 public class CaveManager : MonoBehaviour
 {
+    public List<Cave> caves;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ArrayList<Cave> caves = new ArrayList<Cave>;
+   
     }
 
     // Update is called once per frame
