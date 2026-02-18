@@ -34,8 +34,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ScaleRatioA: 0
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioC: 0.7875
     - _TextureHeight: 512
     - _TextureWidth: 512
     - _WeightBold: 0.5
