@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class QueueManager : MonoBehaviour
 {
-    public Queue<WorkerInterface> WorkerQueue = new Queue<WorkerInterface>();
+    [SerializeField] Queue<Worker> WorkerQueue = new Queue<Worker>();
 
 
-    public void EnQueueWorker(WorkerInterface worker) {
+    public void EnQueueWorker(Worker worker) {
         WorkerQueue.Enqueue(worker);
     }
 
-    public WorkerInterface DequeueWorker()
+    public Worker DequeueWorker()
     {
        return WorkerQueue.Dequeue();
     }

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf5e1d1ac9c0f83438e1fae6000fc660, type: 3}
-  m_Name: Truls
+  m_Name: GuySharpe
   m_EditorClassIdentifier: 
-  characterName: Truls
-  WorkerId: 1
-  portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 10
+  characterName: Guy Sharpe
+  WorkerId: 2
+  portrait: {fileID: -123883647285170024, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
+  experience: 6
