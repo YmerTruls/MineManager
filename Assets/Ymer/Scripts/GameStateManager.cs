@@ -2,13 +2,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LevelChanger : MonoBehaviour
+public class GameStateManager : MonoBehaviour
 {
-    public Dropdown dd;
+    public void SceneChanger(){
 
-    public void ValueChanged()
-    {
-        SceneManager.LoadScene(dd.value);
+    }
+
+    public void WorkerManager(){
+
+    }
+
+    public void ShaftManager(){
+
+    }
+
+    public void Form(){
+
+    }
+
+    public void DailyMessage() {
     }
 }
 
