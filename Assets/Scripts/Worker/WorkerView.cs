@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
-public class Worker : MonoBehaviour
+public class WorkerView : MonoBehaviour
 {
     //public Sprite portraitSprite;
     private SpriteRenderer spriteRenderer;
