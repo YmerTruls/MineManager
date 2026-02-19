@@ -3,8 +3,7 @@ using UnityEngine;
 public class WorkerManager : MonoBehaviour
 {   
 
-    public Worker view;
-
+    public WorkerView view;
     public WorkerData worker;
 
     public void SetWorker(WorkerData worker)
