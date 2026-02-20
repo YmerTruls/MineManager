@@ -1,21 +1,27 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class WorkerView : MonoBehaviour
 {
-    //public Sprite portraitSprite;
     private SpriteRenderer spriteRenderer;
-    public WorkerData workerdata;
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        Hide();
+    }
 
     public void Show(WorkerData data)
     {
-        spriteRenderer.sprite = data.portrait;
+        spriteRenderer.sprite = data != null ? data.portrait : null;
+        spriteRenderer.enabled = (data != null && data.portrait != null);
     }
 
     public void Hide()
     {
         spriteRenderer.sprite = null;
+        spriteRenderer.enabled = false;
     }
 }
+
+
