@@ -10,6 +10,7 @@ public class WorkerManager : MonoBehaviour
     [SerializeField] private WorkerView view;
     [SerializeField] private Transform workerObject;
     [SerializeField] private Camera cam;
+    [SerializeField] private CaveManager cavemanager;
 
     [Header("Queue")]
     [SerializeField] private List<WorkerData> initialQueue = new List<WorkerData>();
@@ -81,6 +82,11 @@ public class WorkerManager : MonoBehaviour
     {
         view.Hide();
         ActiveWorker = false;
+    }
+    public void SendWorker(CaveData cave)
+    {
+        
+
     }
 }
 
