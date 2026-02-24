@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WorkerManager : MonoBehaviour
 {
+    public bool ActiveWorker;
     public GameObject nextButton;
     [Header("Scene refs")]
     [SerializeField] private WorkerView view;
@@ -71,11 +73,14 @@ public class WorkerManager : MonoBehaviour
     public void SetWorker(WorkerData worker)
     {
         view.Show(worker);
+        ActiveWorker = true;
+
     }
 
     public void ClearWorker()
     {
         view.Hide();
+        ActiveWorker = false;
     }
 }
 
