@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public enum ResourceType { Iron, Coal, Gold }
 public class CaveManager : MonoBehaviour
 {
-    public List<Cave> caves;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] public List<CaveData> caves;
+    private CaveNameList cave;
+
+    private void Awake()
     {
-   
+        cave = FindFirstObjectByType<CaveNameList>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RecieveWorker()
     {
-        
+
     }
 }

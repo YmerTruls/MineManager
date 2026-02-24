@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewWorkerData", menuName = "Workers/Worker")]
@@ -6,5 +8,6 @@ public class WorkerData : ScriptableObject
     public string characterName;
     public int WorkerId;
     public Sprite portrait;
-    public string testDialogue;
+    public float experience;
+    public List<string> Dialogs;
 }
