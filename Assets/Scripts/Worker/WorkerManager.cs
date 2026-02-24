@@ -5,8 +5,9 @@ using UnityEngine;
 public class WorkerManager : MonoBehaviour
 {
     public bool ActiveWorker;
-    public GameObject nextButton;
+    public DialogueManager dialogueManager;
     [Header("Scene refs")]
+    [SerializeField] private GameObject nextButton;
     [SerializeField] private WorkerView view;
     [SerializeField] private Transform workerObject;
     [SerializeField] private Camera cam;
@@ -23,7 +24,6 @@ public class WorkerManager : MonoBehaviour
 
     private void Awake()
     {
-        nextButton = GameObject.Find("NextButton");
         cam = Camera.main;
         workerObject = view.transform;
 
@@ -47,6 +47,7 @@ public class WorkerManager : MonoBehaviour
 
         MoveWorkerInFrontOfCamera();
         SetWorker(next);
+        dialogueManager.ShowDialogue(next.testDialogue);
         nextButton.SetActive(false);
     }
 

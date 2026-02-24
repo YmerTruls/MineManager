@@ -2,15 +2,10 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-[RequireComponent(typeof(TMP_Text))]
 
-public class TypewriterEffect : MonoBehaviour
+public class DialogueBox : MonoBehaviour
 {
-    private TMP_Text _textBox;
-
-    // For prototyping
-    [Header("Test String")]
-    [SerializeField] private string testText;
+    [SerializeField] private TMP_Text _textBox;
 
     // Basic Typewriter Functionality
     private int _currentVisibleCharacterIndex;
@@ -24,15 +19,14 @@ public class TypewriterEffect : MonoBehaviour
     [SerializeField] private float interpunctionDelay = 0.5f;
 
     private void Awake()
-    {
-        _textBox = GetComponent<TMP_Text>();
-
-        _simpleDelay = new WaitForSeconds(1 / charactersPerSecond);
+    {        
+        _simpleDelay = new WaitForSeconds(1f / charactersPerSecond);
         _interpunctionDelay = new WaitForSeconds(interpunctionDelay);
     }
     void Start()
     {
-        SetText(_textBox.text);
+        //SetActive(false); ?? 
+        //SetText(_textBox.text);
     }
 
     void Update()
@@ -40,11 +34,17 @@ public class TypewriterEffect : MonoBehaviour
    
     }
 
+    public void HideDialogue()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void SetText(string text)
     {
         if (_typeWriterCoroutine != null)
             StopCoroutine(_typeWriterCoroutine);
 
+        gameObject.SetActive(true);
         _textBox.text = text;
         _textBox.ForceMeshUpdate();
 
