@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class DoneButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject worker;
+    [SerializeField] private GameObject panel;
+
+    private void Awake()
+    {
+        worker = GameObject.Find("WorkerManager");
+    }
+    public void onClick()
     {
         
+        panel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
