@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        Resources = new Dictionary<OreData, int>();
      foreach (OreData ore in allOre)
         {
             if (ore == null) continue;
