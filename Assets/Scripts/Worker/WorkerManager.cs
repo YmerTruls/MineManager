@@ -5,11 +5,9 @@ using UnityEngine;
 public class WorkerManager : MonoBehaviour
 {
     public bool ActiveWorker;
-    public GameObject nextButton;
+    [SerializeField] public GameObject nextButton;
     [Header("Scene refs")]
     [SerializeField] private WorkerView view;
-    [SerializeField] private Transform workerObject;
-    [SerializeField] private Camera cam;
     [SerializeField] private CaveManager cavemanager;
 
     [Header("Queue")]
@@ -19,9 +17,7 @@ public class WorkerManager : MonoBehaviour
 
     private void Awake()
     {
-        nextButton = GameObject.Find("NextButton");
-        cam = Camera.main;
-        workerObject = view.transform;
+
 
         queue = new Queue<WorkerData>(initialQueue);
     }

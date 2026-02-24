@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a4cbc6468e77548a3b689e838cc53f, type: 3}
   m_Name: A2
   m_EditorClassIdentifier: 
-  CaveName: Shaft A2
+  CaveName: A2
   CaveId: 1
+  ResourceType: []
