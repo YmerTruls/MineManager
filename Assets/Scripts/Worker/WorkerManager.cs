@@ -38,7 +38,7 @@ public class WorkerManager : MonoBehaviour
         WorkerData next = queue.Dequeue();
 
         SetWorker(next);
-        dialogueManager.ShowDialogue(next.testDialogue);
+        dialogueManager.ShowDialogue(next.dialog);
         nextButton.SetActive(false);
     }
 

@@ -9,5 +9,5 @@ public class WorkerData : ScriptableObject
     public int WorkerId;
     public Sprite portrait;
     public float experience;
-    public List<string> Dialogs;
+    public string dialog;
 }
