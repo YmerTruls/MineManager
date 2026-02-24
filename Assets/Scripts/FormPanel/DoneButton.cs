@@ -2,17 +2,27 @@ using UnityEngine;
 
 public class DoneButton : MonoBehaviour
 {
-    public GameObject worker;
+    public WorkerManager worker;
     [SerializeField] private GameObject panel;
+    [SerializeField] private CaveNameList cavelist;
+    public CaveData cave;
+
 
     private void Awake()
     {
-        worker = GameObject.Find("WorkerManager");
+        worker = FindFirstObjectByType<WorkerManager>();
+
     }
     public void onClick()
     {
-        
         panel.SetActive(false);
+        if (worker.ActiveWorker) {
+            cave = cavelist.GetSelectedCave();
+            worker.SendWorker(cave);
+        }
+        else {
+            return;
+        }
     }
 
 }
