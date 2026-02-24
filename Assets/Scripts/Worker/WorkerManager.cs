@@ -1,8 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WorkerManager : MonoBehaviour
 {
+    public bool ActiveWorker;
+    public GameObject nextButton;
     [Header("Scene refs")]
     [SerializeField] private WorkerView view;
     [SerializeField] private Transform workerObject;
@@ -20,6 +23,7 @@ public class WorkerManager : MonoBehaviour
 
     private void Awake()
     {
+        nextButton = GameObject.Find("NextButton");
         cam = Camera.main;
         workerObject = view.transform;
 
@@ -35,6 +39,7 @@ public class WorkerManager : MonoBehaviour
         if (queue.Count == 0)
         {
             ClearWorker();
+            nextButton.SetActive(false);
             return;
         }
 
@@ -42,6 +47,7 @@ public class WorkerManager : MonoBehaviour
 
         MoveWorkerInFrontOfCamera();
         SetWorker(next);
+        nextButton.SetActive(false);
     }
 
     private void MoveWorkerInFrontOfCamera()
@@ -67,11 +73,14 @@ public class WorkerManager : MonoBehaviour
     public void SetWorker(WorkerData worker)
     {
         view.Show(worker);
+        ActiveWorker = true;
+
     }
 
     public void ClearWorker()
     {
         view.Hide();
+        ActiveWorker = false;
     }
 }
 
