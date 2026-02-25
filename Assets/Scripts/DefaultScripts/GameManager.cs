@@ -6,20 +6,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private WorkerManager workmanager;
     [SerializeField] private CaveNameList mineDropDown;
     [SerializeField] private List<OreData> allOre;
-    private Dictionary<OreData, int> Resources;
+    [SerializeField] private QuotaData qouta;
 
     private void Awake()
     {
-        Resources = new Dictionary<OreData, int>();
-     foreach (OreData ore in allOre)
-        {
-            if (ore == null) continue;
-
-            if (!Resources.ContainsKey(ore))
-            {
-                Resources.Add(ore, 0);
-            }
-        }   
+         
     }
 
 
@@ -33,5 +24,10 @@ public class GameManager : MonoBehaviour
     public void SendWorker(){
         CaveData cave = GetSelectedCave();
         
+    }
+
+    public QuotaData getQuota()
+    {
+        return null;
     }
 }
