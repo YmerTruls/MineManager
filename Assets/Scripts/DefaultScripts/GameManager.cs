@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     private Dictionary<OreData, int> totalResources;
     private WorkerData currentWorker;
     private CaveManager caveManager;
+    [SerializeField] private QuotaData goalQuota;
 
     private void Awake()
     {
@@ -39,18 +40,22 @@ public class GameManager : MonoBehaviour
             }
             workmanager.ClearWorker();
         }
-        Debug.Log(currentWorker + "  === Total Resources ===");
-        foreach (var pair in totalResources)
-        {
-            Debug.Log(pair.Key.OreName + ": " + pair.Value);
-        }
 
 
 
     }
     public bool win()
     {
-
+       if (totalResources.ContainsKey(goalQuota.Ore) && totalResources[goalQuota.Ore] >= goalQuota.OreCount){
+            return true;
+        }
         return false;
+    }
+    public void EndDay()
+    {
+        if (win())
+        {
+
+        }
     }
 }
