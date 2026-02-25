@@ -16,7 +16,7 @@ public class DoneButton : MonoBehaviour
     public void onClick()
     {
         panel.SetActive(false);
-        if (worker.ActiveWorker) {
+        if (worker.activeWorker) {
             cave = cavelist.GetSelectedCave();
             worker.SendWorker(cave);
         }
