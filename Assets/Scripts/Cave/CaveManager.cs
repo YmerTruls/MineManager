@@ -13,7 +13,7 @@ public class CaveManager
         int index = 0;
         foreach (OreData ores in cave.ResourceType)
         {
-            int amount = (int)((worker.experience * 0.1) + 1) * cave.yield[index];
+            int amount = (int)((worker.experience * 0.1 + 1) * cave.yield[index]);
             resources.Add(ores, amount);
             index++;
         }

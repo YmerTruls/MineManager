@@ -26,9 +26,7 @@ public class GameManager : MonoBehaviour
     }
     public void SendWorker(){
         currentWorker = workmanager.GetActiveWorker();
-        Debug.Log("Sent " + currentWorker.characterName);
         CaveData cave = GetSelectedCave();
-        Debug.Log("to " + cave.CaveName);
         Dictionary<OreData, int> gathered = caveManager.RecieveWorker(currentWorker, cave);
         foreach (var pair in gathered){
             if (totalResources.ContainsKey(pair.Key))
@@ -38,13 +36,17 @@ public class GameManager : MonoBehaviour
             else
             {
                 totalResources.Add(pair.Key, pair.Value);
-                Debug.Log("Gathered" + pair.Key +" "+ totalResources[pair.Key]);
             }
             workmanager.ClearWorker();
         }
-        
-        
-        
+        Debug.Log(currentWorker + "  === Total Resources ===");
+        foreach (var pair in totalResources)
+        {
+            Debug.Log(pair.Key.OreName + ": " + pair.Value);
+        }
+
+
+
     }
     public bool win()
     {

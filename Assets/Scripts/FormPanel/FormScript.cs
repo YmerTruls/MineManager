@@ -25,6 +25,6 @@ public class FormScript : MonoBehaviour
     public void TogglePanel()
     {
         FormPanel.SetActive(!FormPanel.activeSelf);
-        AudioManager.Instance.Play("FormSound");
+        //AudioManager.Instance.Play("FormSound");
     }
 }
