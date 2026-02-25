@@ -6,15 +6,13 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private WorkerManager workmanager;
     [SerializeField] private CaveNameList mineDropDown;
-    private Dictionary<OreData, int> allOre;
     [SerializeField] private QuotaData goalQouta;
     [SerializeField] private QuotaData gatheredResources;
 
     private void Awake()
     {
-         
+ 
     }
-
 
     public void NextWorker(){
         workmanager.NextWorker();
@@ -29,18 +27,7 @@ public class GameManager : MonoBehaviour
     }
     public bool win()
     {
-        int succesCount = 0;
-        int index = 0;
-        foreach (OreData ore in gatheredResources.Ore)
-        {
-            if (gatheredResources.OreCount[index] >= goalQouta.OreCount[index])
-            {
-                succesCount++;
-            }
-            index++;
-        }
-        return (succesCount == goalQouta.Ore.Count);
-        
-        
+
+        return false;
     }
 }
