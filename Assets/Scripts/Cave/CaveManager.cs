@@ -2,18 +2,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CaveManager : MonoBehaviour
+public class CaveManager
 {
-    [SerializeField] public List<CaveData> caves;
-    private CaveNameList cave;
+    private Dictionary<OreData, int> resources;
 
-    private void Awake()
+
+    public Dictionary<OreData, int> RecieveWorker(WorkerData worker, CaveData cave)
     {
-        cave = FindFirstObjectByType<CaveNameList>();
-    }
-
-    public void RecieveWorker()
-    {
-
+        resources = new Dictionary<OreData, int> { };
+        int index = 0;
+        foreach (OreData ores in cave.ResourceType)
+        {
+            int amount = (int)((worker.experience * 0.1) + 1) * cave.yield[index];
+            resources.Add(ores, amount);
+            index++;
+        }
+        return resources;
     }
 }
