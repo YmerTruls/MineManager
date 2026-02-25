@@ -6,5 +6,5 @@ public class CaveData : ScriptableObject
 {
     public string CaveName;
     public int CaveId;
-    public string ResourceType;
+    public List<OreData> ResourceType;
 }

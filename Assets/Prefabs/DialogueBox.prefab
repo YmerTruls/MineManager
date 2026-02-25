@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 6556605434888229966}
   - component: {fileID: 5439558892843191045}
   - component: {fileID: 79334919305782329}
+  - component: {fileID: 7046801412620290907}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6556605434888229966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 6534985923879372747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6066, y: 0.6066, z: 0.6066}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7701813406320969653}
@@ -35,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 39}
+  m_AnchoredPosition: {x: -10, y: -294}
   m_SizeDelta: {x: -1146.0854, y: -619.1838}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5439558892843191045
@@ -76,6 +77,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7046801412620290907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6534985923879372747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a59895d7d08034e9ea0153c1544930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 1916616943014444029}
+  charactersPerSecond: 20
+  interpunctionDelay: 0.5
 --- !u!1 &8165410363561595962
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75a59895d7d08034e9ea0153c1544930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testText: 
+  _textBox: {fileID: 0}
   charactersPerSecond: 20
   interpunctionDelay: 0.5
