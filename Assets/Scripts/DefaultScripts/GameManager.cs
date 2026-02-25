@@ -1,12 +1,14 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private WorkerManager workmanager;
     [SerializeField] private CaveNameList mineDropDown;
-    [SerializeField] private List<OreData> allOre;
-    [SerializeField] private QuotaData qouta;
+    private Dictionary<OreData, int> allOre;
+    [SerializeField] private QuotaData goalQouta;
+    [SerializeField] private QuotaData gatheredResources;
 
     private void Awake()
     {
@@ -25,9 +27,20 @@ public class GameManager : MonoBehaviour
         CaveData cave = GetSelectedCave();
         
     }
-
-    public QuotaData getQuota()
+    public bool win()
     {
-        return null;
+        int succesCount = 0;
+        int index = 0;
+        foreach (OreData ore in gatheredResources.Ore)
+        {
+            if (gatheredResources.OreCount[index] >= goalQouta.OreCount[index])
+            {
+                succesCount++;
+            }
+            index++;
+        }
+        return (succesCount == goalQouta.Ore.Count);
+        
+        
     }
 }
