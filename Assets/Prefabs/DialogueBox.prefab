@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6556605434888229966}
   - component: {fileID: 5439558892843191045}
   - component: {fileID: 79334919305782329}
-  - component: {fileID: 1445600947505776952}
+  - component: {fileID: 7046801412620290907}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1445600947505776952
+--- !u!114 &7046801412620290907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

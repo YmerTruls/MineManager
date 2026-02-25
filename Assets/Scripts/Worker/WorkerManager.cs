@@ -30,7 +30,7 @@ public class WorkerManager : MonoBehaviour
 
     public WorkerData GetActiveWorker() => activeWorker;
     public void NextWorker()
-    {
+    {   
         if (queue.Count == 0)
         {
             ClearWorker();
@@ -40,8 +40,8 @@ public class WorkerManager : MonoBehaviour
         WorkerData next = queue.Dequeue();
 
         SetWorker(next);
-        dialogueManager.ShowDialogue(next.dialog);
         nextButton.SetActive(false);
+        dialogueManager.ShowDialogue(next.dialog);
     }
 
     public void SetWorker(WorkerData worker)
