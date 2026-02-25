@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WorkerManager : MonoBehaviour
 {
-    public bool ActiveWorker;
+    public WorkerData activeWorker;
     public DialogueManager dialogueManager;
     [Header("Scene refs")]
     [SerializeField] private GameObject nextButton;
@@ -27,6 +27,8 @@ public class WorkerManager : MonoBehaviour
     {
         ClearWorker();
     }
+
+    public WorkerData GetActiveWorker() => activeWorker;
     public void NextWorker()
     {   
         if (queue.Count == 0)
@@ -45,14 +47,14 @@ public class WorkerManager : MonoBehaviour
     public void SetWorker(WorkerData worker)
     {
         view.Show(worker);
-        ActiveWorker = true;
+        activeWorker = worker;
 
     }
 
     public void ClearWorker()
     {
         view.Hide();
-        ActiveWorker = false;
+        activeWorker = null;
     }
     public void SendWorker(CaveData cave)
     {
