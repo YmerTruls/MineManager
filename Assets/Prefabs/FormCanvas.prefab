@@ -333,9 +333,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4731830795869010641}
-        m_TargetAssemblyTypeName: DoneButton, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 8415898070179977520}
+        m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -345,9 +345,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8415898070179977520}
-        m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
-        m_MethodName: Close
+      - m_Target: {fileID: 4731830795869010641}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendWorker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2576,6 +2576,7 @@ GameObject:
   - component: {fileID: 8290078971986399618}
   - component: {fileID: 6662416706080803495}
   - component: {fileID: 2633081010023408385}
+  - component: {fileID: 7841860188988065696}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -2685,7 +2686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2633081010023408385}
+      - m_Target: {fileID: 7841860188988065696}
         m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
@@ -2698,6 +2699,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2633081010023408385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7202659009801079157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b70d842526d743499b1ca6190eb1345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 3627302688079433909}
+--- !u!114 &7841860188988065696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3906,6 +3920,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1816884143105404850}
     m_Modifications:
+    - target: {fileID: 2142877022329867711, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2142877022329867711, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 4103402993974839111, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3936,7 +3958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4103402993974839111, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4103402993974839111, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3986,6 +4008,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6117728140897006512, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6241552312017368085, guid: 368db137cdf52b64c92009b66afe5284, type: 3}
     - target: {fileID: 8692583123689157682, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Name
       value: EndDayButton
@@ -4014,11 +4040,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2142877022329867711, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -1
+      value: -3.2800002
       objectReference: {fileID: 0}
     - target: {fileID: 2142877022329867711, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5
+      value: 0.36000013
       objectReference: {fileID: 0}
     - target: {fileID: 4103402993974839111, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Pivot.x
