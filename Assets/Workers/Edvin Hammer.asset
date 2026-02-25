@@ -15,5 +15,5 @@ MonoBehaviour:
   characterName: Edvin Hammer
   WorkerId: 3
   portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 1
+  experience: 2
   dialog: Hello, I am Edvin.

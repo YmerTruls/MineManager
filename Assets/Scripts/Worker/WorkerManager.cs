@@ -55,6 +55,7 @@ public class WorkerManager : MonoBehaviour
     {
         view.Hide();
         activeWorker = null;
+        nextButton.SetActive(true);
     }
     public void SendWorker(CaveData cave)
     {
