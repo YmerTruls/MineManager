@@ -10,6 +10,7 @@ public class WorkerManager : MonoBehaviour
     [SerializeField] private GameObject nextButton;
     [SerializeField] private WorkerView view;
     [SerializeField] private CaveManager cavemanager;
+    [SerializeField] private GameObject endDayButton;
 
     [Header("Queue")]
     [SerializeField] private List<WorkerData> initialQueue = new List<WorkerData>();
@@ -31,11 +32,6 @@ public class WorkerManager : MonoBehaviour
     public WorkerData GetActiveWorker() => activeWorker;
     public void NextWorker()
     {   
-        if (queue.Count == 0)
-        {
-            ClearWorker();
-            return;
-        }
 
         WorkerData next = queue.Dequeue();
 
@@ -53,13 +49,16 @@ public class WorkerManager : MonoBehaviour
 
     public void ClearWorker()
     {
+        if (queue.Count == 0)
+        {
+            view.Hide();
+            nextButton.SetActive(false);
+            endDayButton.SetActive(true);
+            return;
+        }
         view.Hide();
         activeWorker = null;
-    }
-    public void SendWorker(CaveData cave)
-    {
-        
-
+        nextButton.SetActive(true);
     }
 }
 

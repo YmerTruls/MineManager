@@ -4,6 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewQuotaData", menuName = "Quotas/Quota")]
 public class QuotaData : ScriptableObject
 {
-    public List<OreData> Ore;
-    public List<int> OreCount;
+    public OreData Ore;
+    public int OreCount;
 }
