@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     {
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
+        
+        
  
     }
 
@@ -62,7 +64,14 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {
+        {   
+            foreach (var pair in totalResources)
+            {
+                string key = pair.Key;
+                int value = pair.Value;
+                PlayerPrefs.SetInt(key, value);
+                PlayerPrefs.SetString("win", "You fufilled the Qouta!");
+            }
             Debug.Log("You won!");
         }
     }
