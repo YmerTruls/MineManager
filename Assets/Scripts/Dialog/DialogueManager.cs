@@ -6,16 +6,11 @@ public class DialogueManager : MonoBehaviour
     //[SerializeField] TMP_Text textBox;
     [SerializeField] private DialogueBox dialogueBox;
 
-    void Start()
+    public void HideDialog()
     {
-        //textBox.SetText("Hello");
+        dialogueBox.HideDialogue();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void ShowDialogue(string text)
     {
