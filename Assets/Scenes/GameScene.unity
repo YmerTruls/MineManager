@@ -413,6 +413,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 859035718285493145, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1835296519}
     - target: {fileID: 1420663303913118358, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_Name
       value: FormCanvas
@@ -496,6 +500,18 @@ PrefabInstance:
     - target: {fileID: 1816884143105404850, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191273475886845833, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1835296519}
+    - target: {fileID: 4191273475886845833, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191273475886845833, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5865577577452502826, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_Camera
@@ -617,6 +633,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DailyMessageText: {fileID: 5739118369345998242}
+--- !u!114 &1835296519 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+  m_PrefabInstance: {fileID: 6070005041103324108}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835296517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa8d0ed244a1704491d42ac98ee2994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1844317634 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2962211091219106534, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
