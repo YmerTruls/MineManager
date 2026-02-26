@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private WorkerManager workmanager;
     [SerializeField] private CaveNameList mineDropDown;
-    private Dictionary<OreData, int> totalResources;
+    private Dictionary<string, int> totalResources;
     private WorkerData currentWorker;
     private CaveManager caveManager;
     [SerializeField] private QuotaData goalQuota;
@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         caveManager = new CaveManager();
-        totalResources = new Dictionary<OreData, int> { };
+        totalResources = new Dictionary<string, int> { };
  
     }
 
@@ -30,23 +30,27 @@ public class GameManager : MonoBehaviour
         CaveData cave = GetSelectedCave();
         Dictionary<OreData, int> gathered = caveManager.RecieveWorker(currentWorker, cave);
         foreach (var pair in gathered){
-            if (totalResources.ContainsKey(pair.Key))
+            string key = pair.Key.OreName;
+            int value = pair.Value;
+            if (totalResources.ContainsKey(key))
             {
-                totalResources[pair.Key] += pair.Value;
+                value += totalResources[key];
+                totalResources[key] = value;
+                Debug.Log("Containts  " + totalResources[key] + key);
             }
             else
             {
-                totalResources.Add(pair.Key, pair.Value);
+                totalResources.Add(key, value);
+                Debug.Log("Added  " + key + value);
             }
-            workmanager.ClearWorker();
         }
-
-
-
+        workmanager.ClearWorker();
     }
     public bool win()
     {
-       if (totalResources.ContainsKey(goalQuota.Ore) && totalResources[goalQuota.Ore] >= goalQuota.OreCount){
+        Debug.Log(goalQuota.Ore.OreName);
+        Debug.Log(totalResources["Coal"]);
+       if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
             return true;
         }
         return false;
@@ -55,7 +59,7 @@ public class GameManager : MonoBehaviour
     {
         if (win())
         {
-
+            Debug.Log("You won!");
         }
     }
 }

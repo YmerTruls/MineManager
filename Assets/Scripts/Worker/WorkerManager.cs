@@ -49,6 +49,7 @@ public class WorkerManager : MonoBehaviour
 
     public void ClearWorker()
     {
+        dialogueManager.HideDialog();
         if (queue.Count == 0)
         {
             view.Hide();
