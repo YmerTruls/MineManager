@@ -16,4 +16,14 @@ public class CaveNameList : MonoBehaviour
     }
 
     public CaveData GetSelectedCave() { return Caves[dropdown.value]; }
+
+    public void OnValueChanged()
+    {
+        AudioManager.Instance.Play("WritingSound");
+    }
+
+    public void OnClick()
+    {
+        AudioManager.Instance.Play("ClickSound");
+    }
 }

@@ -16,5 +16,15 @@ public class WorkerNameList : MonoBehaviour
     }
 
     public WorkerData GetSelectedWorker() => workers[dropdown.value];
+
+    public void OnValueChanged()
+    {
+        AudioManager.Instance.Play("WritingSound");
+    }
+
+    public void OnClick()
+    {
+        AudioManager.Instance.Play("ClickSound");
+    }
 }
 

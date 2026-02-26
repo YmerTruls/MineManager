@@ -24,6 +24,7 @@ public class DoneButton : MonoBehaviour
             worker.ClearWorker();
             db.HideDialogue();
             nextButton.SetActive(true);
+            AudioManager.Instance.Play("PickSound");
 
         }
         else {
