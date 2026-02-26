@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -71,6 +72,8 @@ public class GameManager : MonoBehaviour
                 int value = pair.Value;
                 PlayerPrefs.SetInt(key, value);
                 PlayerPrefs.SetString("win", "You fufilled the Qouta!");
+                SceneManager.LoadScene(1);
+                
             }
             Debug.Log("You won!");
         }
