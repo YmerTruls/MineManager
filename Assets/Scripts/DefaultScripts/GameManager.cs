@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,21 +37,24 @@ public class GameManager : MonoBehaviour
             {
                 value += totalResources[key];
                 totalResources[key] = value;
-                Debug.Log("Containts  " + totalResources[key] + key);
             }
             else
             {
                 totalResources.Add(key, value);
-                Debug.Log("Added  " + key + value);
+                Debug.Log("Added \"" + key + "\" \"" + value + "\"");
             }
+            Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
         }
         workmanager.ClearWorker();
     }
     public bool win()
     {
+        Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
+
         Debug.Log(goalQuota.Ore.OreName);
+        Debug.Log("Type: " + "Coal".GetType());
         Debug.Log(totalResources["Coal"]);
-       if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
+        if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
             return true;
         }
         return false;
