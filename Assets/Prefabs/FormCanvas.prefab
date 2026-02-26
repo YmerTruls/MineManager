@@ -222,7 +222,6 @@ GameObject:
   - component: {fileID: 7276791011227321527}
   - component: {fileID: 1442260131971632993}
   - component: {fileID: 4453721399142682025}
-  - component: {fileID: 4731830795869010641}
   - component: {fileID: 8415898070179977520}
   m_Layer: 5
   m_Name: Done
@@ -333,18 +332,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4731830795869010641}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendWorker
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 8415898070179977520}
         m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
         m_MethodName: Close
@@ -357,21 +344,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4731830795869010641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984176017594310287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa8d0ed244a1704491d42ac98ee2994, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  workmanager: {fileID: 0}
-  mineDropDown: {fileID: 3381052693593293127}
-  goalQuota: {fileID: 0}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendWorker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8415898070179977520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,7 +1191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.0000076293945}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &3627302688079433909
@@ -4189,6 +4173,10 @@ PrefabInstance:
     - target: {fileID: 6837450939519128433, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751754912259305821, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WorkerManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8692583123689157682, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Name

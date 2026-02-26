@@ -194,10 +194,6 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 541733104}
-    - target: {fileID: 6474742249010247367, guid: 83162b75de3124f40b824422469ae106, type: 3}
-      propertyPath: initialQueue.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 9076426039677924646, guid: 83162b75de3124f40b824422469ae106, type: 3}
       propertyPath: m_Name
       value: WorkerManager
@@ -420,15 +416,7 @@ PrefabInstance:
     - target: {fileID: 859035718285493145, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217382017287608361, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217382017287608361, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1964306926}
     - target: {fileID: 1420663303913118358, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_Name
       value: FormCanvas
@@ -516,33 +504,16 @@ PrefabInstance:
     - target: {fileID: 4191273475886845833, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453721399142682025, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1425922605}
     - target: {fileID: 4453721399142682025, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4453721399142682025, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SendWorker
-      objectReference: {fileID: 0}
-    - target: {fileID: 4731830795869010641, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: workmanager
-      value: 
-      objectReference: {fileID: 1964306926}
+      objectReference: {fileID: 1425922605}
     - target: {fileID: 5865577577452502826, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1415163446}
-    - target: {fileID: 5933399713508475052, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0000076293945
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4731830795869010641, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -555,22 +526,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
-      propertyPath: m_NormalizedViewPortRect.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
-      propertyPath: m_NormalizedViewPortRect.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3236299234315763727, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -625,6 +580,17 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
   m_PrefabInstance: {fileID: 1226136825}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1425922605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+  m_PrefabInstance: {fileID: 6070005041103324108}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa8d0ed244a1704491d42ac98ee2994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1755934333 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3381052693593293127, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
