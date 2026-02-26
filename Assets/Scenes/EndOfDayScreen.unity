@@ -435,8 +435,8 @@ GameObject:
   - component: {fileID: 908345336}
   - component: {fileID: 908345338}
   - component: {fileID: 908345337}
-  - component: {fileID: 908345339}
   - component: {fileID: 908345340}
+  - component: {fileID: 908345341}
   m_Layer: 5
   m_Name: Result text
   m_TagString: Untagged
@@ -578,21 +578,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908345335}
   m_CullTransparentMesh: 1
---- !u!114 &908345339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908345335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75a59895d7d08034e9ea0153c1544930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _textBox: {fileID: 0}
-  charactersPerSecond: 20
-  interpunctionDelay: 0.5
 --- !u!114 &908345340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,6 +590,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 316db1b99afe8614bbf1be024e4b477d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 908345337}
+  dialogueBox: {fileID: 908345341}
+--- !u!114 &908345341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908345335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75a59895d7d08034e9ea0153c1544930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textBox: {fileID: 908345337}
+  charactersPerSecond: 20
+  interpunctionDelay: 0.5
 --- !u!1 &1137969891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,8 +1026,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 714b1e6463676e64cbe9a6e426a5aa67, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 570021952145166875, guid: b456fff4da8deb84bad53665e1d6dab3, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

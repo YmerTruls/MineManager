@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,11 +12,18 @@ public class GameManager : MonoBehaviour
     private WorkerData currentWorker;
     private CaveManager caveManager;
     [SerializeField] private QuotaData goalQuota;
+    [SerializeField] private DailyMessageManager DailyMessage;
 
     private void Awake()
     {
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
+        DailyMessage.SetDailyMessage("Greeting Foreman! Welcome to the M.I.N.E. Corp mining operation!. \n" +
+            "To settle in to your new job, we have given you the opportunity to show us your competance \n" +
+            "by sending your new co-workers to gather coal in the mines. Make sure to reach the daily qouta!\n"
+            + "M.I.N.E. Corp, digging our way to the future!\n" +
+            "Daily Qouta:  " + goalQuota.Ore.OreName + "  " + goalQuota.OreCount);
+        
  
     }
 
@@ -62,7 +70,16 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {
+        {   
+            foreach (var pair in totalResources)
+            {
+                string key = pair.Key;
+                int value = pair.Value;
+                PlayerPrefs.SetInt(key, value);
+                PlayerPrefs.SetString("win", "You fufilled the Qouta!");
+                SceneManager.LoadScene(1);
+                
+            }
             Debug.Log("You won!");
         }
     }
