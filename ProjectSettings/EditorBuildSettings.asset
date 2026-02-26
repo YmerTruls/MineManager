@@ -5,18 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Ymer/Scenes/Scene0.unity
-    guid: cc36103cddaaf054faa366dc646ef5e5
+    path: Assets/Scenes/GameScene.unity
+    guid: ed1ee535e4a3c564aa800821cbcd8e8d
   - enabled: 1
-    path: Assets/Ymer/Scenes/Scene1.unity
-    guid: 00d9cd33df32dca489dafacdd72cfc5b
-  - enabled: 1
-    path: Assets/Ymer/Scenes/Scene2.unity
-    guid: 12ed2c8a5f0917d4abba1a8bf782dc90
+    path: Assets/Scenes/EndOfDayScreen.unity
+    guid: edcb8ddb2d001984a9f9d49c8aab68c0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
