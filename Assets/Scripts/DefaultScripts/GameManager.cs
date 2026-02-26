@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GameManager : MonoBehaviour
     {
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
+        
+        
  
     }
 
@@ -62,7 +65,16 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {
+        {   
+            foreach (var pair in totalResources)
+            {
+                string key = pair.Key;
+                int value = pair.Value;
+                PlayerPrefs.SetInt(key, value);
+                PlayerPrefs.SetString("win", "You fufilled the Qouta!");
+                SceneManager.LoadScene(1);
+                
+            }
             Debug.Log("You won!");
         }
     }
