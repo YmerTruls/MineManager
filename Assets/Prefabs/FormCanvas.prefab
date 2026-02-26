@@ -333,9 +333,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8415898070179977520}
-        m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
-        m_MethodName: Close
+      - m_Target: {fileID: 4731830795869010641}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SendWorker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -345,9 +345,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4731830795869010641}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SendWorker
+      - m_Target: {fileID: 8415898070179977520}
+        m_TargetAssemblyTypeName: ClosePanel, Assembly-CSharp
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1513348692467414352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2426,10 +2426,6 @@ MonoBehaviour:
   workers:
   - {fileID: 11400000, guid: 4520207d070bd2945b1a58b77ec5277a, type: 2}
   - {fileID: 11400000, guid: 82758714a128b954bb75345d899c8a21, type: 2}
-  - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
-  - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
-  - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
-  - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
   - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
 --- !u!1 &7134079248384245022
 GameObject:
@@ -3670,7 +3666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6534985923879372747, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_Pivot.x
@@ -3750,7 +3746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -120
+      value: -119.99997
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4028,6 +4024,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6241552312017368085, guid: 368db137cdf52b64c92009b66afe5284, type: 3}
+    - target: {fileID: 7751754912259305821, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndDay
+      objectReference: {fileID: 0}
     - target: {fileID: 8692583123689157682, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Name
       value: EndDayButton
