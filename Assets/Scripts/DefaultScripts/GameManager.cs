@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         DailyMessage.SetDailyMessage("Greetings Foreman F12! Welcome to the M.I.N.E. Corp mining operation! \n" +
             "To settle in to your new position, we are only giving you access to mineshafts A1 and A2 today. \n" +
             "We have also delivered simple forms that you can give to the worker to send them to a cave, they should be on your left.\n" +
-            "Make sure to reach the daily qouta! M.I.N.E. Corp, digging our way to the future!\n" + "\n" +
+            "Make sure to reach the daily qouta! M.I.N.E. Corp, digging our way to the future!\n"  +
             "Daily Qouta:  " + goalQuota.Ore.OreName + "  " + goalQuota.OreCount);
         
  

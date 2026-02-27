@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 541733104}
+    - target: {fileID: 6474742249010247367, guid: 83162b75de3124f40b824422469ae106, type: 3}
+      propertyPath: initialQueue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9076426039677924646, guid: 83162b75de3124f40b824422469ae106, type: 3}
       propertyPath: m_Name
       value: WorkerManager
@@ -413,6 +417,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 225953673510324378, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: workers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 225953673510324378, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: 'workers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 4520207d070bd2945b1a58b77ec5277a, type: 2}
+    - target: {fileID: 225953673510324378, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: 'workers.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
     - target: {fileID: 859035718285493145, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -529,6 +545,22 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1415163446}
+    - target: {fileID: 6854589571242319334, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 181.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854589571242319334, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 83.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854589571242319334, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854589571242319334, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -270.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -544,19 +576,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.011201629
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.010869565
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.97759676
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9782609
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3236299234315763727, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_LocalPosition.x
