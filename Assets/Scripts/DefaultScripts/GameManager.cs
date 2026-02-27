@@ -18,10 +18,10 @@ public class GameManager : MonoBehaviour
     {
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
-        DailyMessage.SetDailyMessage("Greeting Foreman! Welcome to the M.I.N.E. Corp mining operation!. \n" +
-            "To settle in to your new job, we have given you the opportunity to show us your competance \n" +
-            "by sending your new co-workers to gather coal in the mines. Make sure to reach the daily qouta!\n"
-            + "M.I.N.E. Corp, digging our way to the future!\n" +
+        DailyMessage.SetDailyMessage("Greetings Foreman F12! Welcome to the M.I.N.E. Corp mining operation! \n" +
+            "To settle in to your new position, we are only giving you access to mineshafts A1 and A2 today. \n" +
+            "We have also delivered simple forms that you can give to the worker to send them to a cave, they should be on your left.\n" +
+            "Make sure to reach the daily qouta! M.I.N.E. Corp, digging our way to the future!\n" + "\n" +
             "Daily Qouta:  " + goalQuota.Ore.OreName + "  " + goalQuota.OreCount);
         
  

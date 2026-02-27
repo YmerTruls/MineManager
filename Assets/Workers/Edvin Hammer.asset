@@ -15,5 +15,7 @@ MonoBehaviour:
   characterName: Edvin Hammer
   WorkerId: 3
   portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 2
-  dialog: Hello, I am Edvin.
+  experience: 8
+  dialog: Hey, name's Edvin. You're the new foreman right? A right sorry sod you
+    are. They've been offering me that position for years but only morons take it.
+    Just send me to A1 unless you wanna end up like the guy before you.
