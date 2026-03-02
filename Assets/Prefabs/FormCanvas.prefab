@@ -3087,7 +3087,6 @@ MonoBehaviour:
   dropdown: {fileID: 5716142942814469204}
   workers:
   - {fileID: 11400000, guid: 4520207d070bd2945b1a58b77ec5277a, type: 2}
-  - {fileID: 11400000, guid: 82758714a128b954bb75345d899c8a21, type: 2}
   - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
 --- !u!1 &7134079248384245022
 GameObject:
@@ -4569,11 +4568,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 162
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 60
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4605,11 +4604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -324
+      value: -270
       objectReference: {fileID: 0}
     - target: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4826,6 +4825,14 @@ PrefabInstance:
     - target: {fileID: 4103402993974839111, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837450939519128433, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_text
+      value: END DAY
+      objectReference: {fileID: 0}
+    - target: {fileID: 7751754912259305821, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8692583123689157682, guid: ad1dd184ff98eb34f9f458dec5f78726, type: 3}
       propertyPath: m_Name
