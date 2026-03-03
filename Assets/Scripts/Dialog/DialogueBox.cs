@@ -142,7 +142,7 @@ public class DialogueBox : MonoBehaviour
                 _textBox.maxVisibleCharacters++;
             }
 
-            char character = textInfo.characterInfo[_textBox.maxVisibleCharacters].character;
+            char character = textInfo.characterInfo[_textBox.maxVisibleCharacters-1].character;
             
             if ("?.,;!-\n".Contains(character))
             {
