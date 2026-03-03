@@ -19,7 +19,6 @@ public class DialogueManager : MonoBehaviour
 
     public void HideDialog()
     {
-        Debug.Log("Hide: " + this.GetInstanceID());
         if (_setDialogCoroutine != null)
             StopCoroutine(_setDialogCoroutine);
 
@@ -29,7 +28,6 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowDialogue(string text)
     {
-        Debug.Log("Show: " + this.GetInstanceID());
         _setDialogCoroutine = StartCoroutine(DelayedDialoge(text));
     }
 

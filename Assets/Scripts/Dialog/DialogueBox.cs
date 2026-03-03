@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 
@@ -13,7 +14,6 @@ public class DialogueBox : MonoBehaviour
     private int dialogPage = 1;
 
     // Basic Typewriter Functionality
-    private int _currentVisibleCharacterIndex;
     private Coroutine _typeWriterCoroutine;
 
     private WaitForSeconds _simpleDelay;
@@ -44,13 +44,18 @@ public class DialogueBox : MonoBehaviour
         dialogPage = page;
         _textBox.pageToDisplay = page;
 
-        int pageCount = _textBox.textInfo.pageCount;
+        TMP_TextInfo textInfo = _textBox.textInfo;
+        int pageCount = textInfo.pageCount;
+        int pageLastCharIndex = textInfo.pageInfo[dialogPage - 1].lastCharacterIndex;
+
+        Debug.Log(_textBox.maxVisibleCharacters + ", " + pageLastCharIndex);
 
         // Show/Hide Buttons
-        if (dialogPage == pageCount)
+        if (dialogPage == pageCount && _textBox.maxVisibleCharacters == pageLastCharIndex)
         {
             NextButton.SetActive(false);
-        } else
+        } 
+        else
         {
             NextButton.SetActive(true);
         }
@@ -68,8 +73,20 @@ public class DialogueBox : MonoBehaviour
     public void NextPage()
     {
         _textBox.ForceMeshUpdate();
-        int pageCount = _textBox.textInfo.pageCount;
-        if (dialogPage < pageCount)
+
+        TMP_TextInfo textInfo = _textBox.textInfo;
+        int pageCount = textInfo.pageCount;
+        int pageLastCharIndex = textInfo.pageInfo[dialogPage - 1].lastCharacterIndex;
+
+        if (_textBox.maxVisibleCharacters < pageLastCharIndex)
+        {
+            _textBox.maxVisibleCharacters = pageLastCharIndex;
+            if (dialogPage == pageCount)
+            {
+                NextButton.SetActive(false);
+            }
+        } 
+        else if (dialogPage < pageCount)
         {
             DisplayPage(dialogPage + 1);
         }
@@ -100,7 +117,7 @@ public class DialogueBox : MonoBehaviour
         _textBox.ForceMeshUpdate();
 
         _textBox.maxVisibleCharacters = 0;
-        _currentVisibleCharacterIndex = 0;
+        _textBox.maxVisibleCharacters = 0;
 
         _typeWriterCoroutine = StartCoroutine(Typewriter());
     }
@@ -109,15 +126,16 @@ public class DialogueBox : MonoBehaviour
     {
         TMP_TextInfo textInfo = _textBox.textInfo;
 
-        while (_currentVisibleCharacterIndex < textInfo.characterCount)
+        while (_textBox.maxVisibleCharacters < textInfo.characterCount)
         {
-            char character = textInfo.characterInfo[_currentVisibleCharacterIndex].character;
+            if (_textBox.maxVisibleCharacters < textInfo.pageInfo[dialogPage - 1].lastCharacterIndex)
+            {
+                _textBox.maxVisibleCharacters++;
+            }
 
-            _textBox.maxVisibleCharacters++;
-
-            if (character == '?' || character == '.' || character == ',' ||
-                character == ';' || character == '!' || character == '-' ||
-                character == '\n')
+            char character = textInfo.characterInfo[_textBox.maxVisibleCharacters].character;
+            
+            if ("?.,;!-\n".Contains(character))
             {
                 yield return _interpunctionDelay;
             }
@@ -125,8 +143,6 @@ public class DialogueBox : MonoBehaviour
             {
                 yield return _simpleDelay;
             }
-
-            _currentVisibleCharacterIndex++;
         }
     }
 }
