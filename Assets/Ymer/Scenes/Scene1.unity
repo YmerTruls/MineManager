@@ -209,11 +209,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2839ab4f9c0c2104291421a6121e0439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &282541154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2962211091219106534, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
-  m_PrefabInstance: {fileID: 6361007153566122164}
-  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &221364420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3987717848038580385, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987717848038580385, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e7347f7803cd80e4ea12eea4860577d8, type: 3}
+    - target: {fileID: 3987717848038580385, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: FormSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987717848038580385, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987717848038580385, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130752064925266403, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273011313032963864, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2324c8d5c96a89843b9fb5f8a739881b, type: 3}
 --- !u!114 &315372664 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7212125090079720179, guid: 8de38d3068884b74d8732ed16d95ece6, type: 3}
@@ -892,6 +964,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 221364420}
   - {fileID: 582524192}
   - {fileID: 4090970823996573297}
   - {fileID: 9183962683048902170}
