@@ -16,6 +16,9 @@ MonoBehaviour:
   WorkerId: 3
   portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 8
-  dialog: Hey, name's Edvin. You're the new foreman right? A right sorry sod you
-    are. They've been offering me that position for years but only morons take it.
-    Just send me to A1 unless you wanna end up like the guy before you.
+  dialog: 'Hey you! Name''s Edvin. You''re the new foreman right? A right sorry sod
+    you are. The higher ups have been offering me your new position for years, but
+    the difference between you and me is that I''m smart enough not to put myself
+    in your now hopeless position. Well your new job is to send us into those dangerous
+    caves, so get on with it! Just send me to A1 unless you wanna end up like the
+    guy before you. '
