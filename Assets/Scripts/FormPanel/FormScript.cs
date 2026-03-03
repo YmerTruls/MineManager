@@ -4,7 +4,6 @@ using static UnityEngine.Rendering.DebugUI;
 public class FormScript : MonoBehaviour
 {
     [SerializeField] private GameObject FormPanel;
-    [SerializeField] private AudioManager audioManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +24,6 @@ public class FormScript : MonoBehaviour
     public void TogglePanel()
     {
         FormPanel.SetActive(!FormPanel.activeSelf);
-        //AudioManager.Instance.Play("FormSound");
+        AudioManager.Instance.Play("FormSound");
     }
 }

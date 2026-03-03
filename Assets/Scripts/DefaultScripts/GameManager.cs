@@ -38,7 +38,8 @@ public class GameManager : MonoBehaviour
         currentWorker = workmanager.GetActiveWorker();
         CaveData cave = GetSelectedCave();
         Dictionary<OreData, int> gathered = caveManager.RecieveWorker(currentWorker, cave);
-        foreach (var pair in gathered){
+        foreach (var pair in gathered)
+        {
             string key = pair.Key.OreName;
             int value = pair.Value;
             if (totalResources.ContainsKey(key))
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
                 totalResources.Add(key, value);
             }
         }
+        //AudioManager.Instance.Play("PickSound");
         workmanager.ClearWorker();
     }
     public bool win()
