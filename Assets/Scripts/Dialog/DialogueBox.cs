@@ -48,25 +48,31 @@ public class DialogueBox : MonoBehaviour
         int pageCount = textInfo.pageCount;
         int pageLastCharIndex = textInfo.pageInfo[dialogPage - 1].lastCharacterIndex;
 
-        Debug.Log(_textBox.maxVisibleCharacters + ", " + pageLastCharIndex);
-
         // Show/Hide Buttons
-        if (dialogPage == pageCount && _textBox.maxVisibleCharacters == pageLastCharIndex)
+        if (dialogPage == pageCount && _textBox.maxVisibleCharacters >= pageLastCharIndex)
         {
-            NextButton.SetActive(false);
-        } 
+            SetButtonActive(NextButton, false);
+        }
         else
         {
-            NextButton.SetActive(true);
+            SetButtonActive(NextButton, true);
         }
 
         if (dialogPage == 1)
         {
-            PreviousButton.SetActive(false);
+            SetButtonActive(PreviousButton, false);
         }
         else
         {
-            PreviousButton.SetActive(true);
+            SetButtonActive(PreviousButton, true);
+        }
+    }
+
+    private void SetButtonActive(GameObject button, bool active)
+    {
+        if (button != null)
+        {
+            button.SetActive(active);
         }
     }
 
@@ -82,8 +88,8 @@ public class DialogueBox : MonoBehaviour
         {
             _textBox.maxVisibleCharacters = pageLastCharIndex;
             if (dialogPage == pageCount)
-            {
-                NextButton.SetActive(false);
+            {   
+                SetButtonActive(NextButton, false);
             }
         } 
         else if (dialogPage < pageCount)
@@ -124,11 +130,14 @@ public class DialogueBox : MonoBehaviour
 
     private IEnumerator Typewriter()
     {
+        _textBox.ForceMeshUpdate();
+
         TMP_TextInfo textInfo = _textBox.textInfo;
+        int pageCount = textInfo.pageCount;
 
         while (_textBox.maxVisibleCharacters < textInfo.characterCount)
         {
-            if (_textBox.maxVisibleCharacters < textInfo.pageInfo[dialogPage - 1].lastCharacterIndex)
+            if (pageCount == 1 || _textBox.maxVisibleCharacters <= textInfo.pageInfo[dialogPage - 1].lastCharacterIndex)
             {
                 _textBox.maxVisibleCharacters++;
             }

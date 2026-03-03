@@ -63,7 +63,8 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {   
+        {
+            Debug.Log("Win!");
             foreach (var pair in totalResources)
             {
                 string key = pair.Key;
