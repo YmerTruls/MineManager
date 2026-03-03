@@ -1,16 +1,17 @@
 fileFormatVersion: 2
-guid: d1dda9e2c8d95a345ac8d05ce7417aac
+guid: 3cd2592609aa9d2419b23e6213533d7e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 11
+  fontSize: 12
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - PixReg
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d1dda9e2c8d95a345ac8d05ce7417aac, type: 3}
   customCharacters: " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\u220E\xC5\xC4\xD6\xE5\xE4\xF6"
   fontRenderingMode: 2
   ascentCalculationMode: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78164f6e999132b47bf74e23edf6dd9c
+guid: b456fff4da8deb84bad53665e1d6dab3
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,19 +123,19 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DropDownArrow
+  - name: Textbox
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 2, y: 2, z: 2, w: 2}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 10
-      height: 7
-    spriteID: a21cafbb0cfaeef438ba127fa0bfd2db
+      width: 128
+      height: 68
+    spriteID: d9791ea897125ca458eb689ad938d999
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,25 +148,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2131080192
+      value0: 4158586906
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: DropDownArrow
+    name: Textbox
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: DropDownArrow
+    - name: Textbox
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 10
-        height: 7
-      spriteId: a21cafbb0cfaeef438ba127fa0bfd2db
+        width: 128
+        height: 68
+      spriteId: d9791ea897125ca458eb689ad938d999
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -185,5 +185,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 10, y: 7}
-  previousTextureSize: {x: 32, y: 16}
+  canvasSize: {x: 128, y: 68}
+  previousTextureSize: {x: 256, y: 128}

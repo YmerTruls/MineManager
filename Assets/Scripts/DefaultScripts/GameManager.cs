@@ -1,20 +1,29 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private WorkerManager workmanager;
     [SerializeField] private CaveNameList mineDropDown;
-    private Dictionary<OreData, int> totalResources;
+    private Dictionary<string, int> totalResources;
     private WorkerData currentWorker;
     private CaveManager caveManager;
     [SerializeField] private QuotaData goalQuota;
+    [SerializeField] private DailyMessageManager DailyMessage;
 
     private void Awake()
     {
         caveManager = new CaveManager();
-        totalResources = new Dictionary<OreData, int> { };
+        totalResources = new Dictionary<string, int> { };
+        DailyMessage.SetDailyMessage("Greetings Foreman F12! Welcome to the M.I.N.E. Corp mining operation! \n" +
+            "To settle in to your new position, we are only giving you access to mineshafts A1 and A2 today. \n" +
+            "We have also delivered simple forms that you can give to the worker to send them to a cave, they should be on your left.\n" +
+            "Make sure to reach the daily qouta! M.I.N.E. Corp, digging our way to the future!\n"  +
+            "Daily Qouta:  " + goalQuota.Ore.OreName + "  " + goalQuota.OreCount);
+        
  
     }
 
@@ -30,23 +39,30 @@ public class GameManager : MonoBehaviour
         CaveData cave = GetSelectedCave();
         Dictionary<OreData, int> gathered = caveManager.RecieveWorker(currentWorker, cave);
         foreach (var pair in gathered){
-            if (totalResources.ContainsKey(pair.Key))
+            string key = pair.Key.OreName;
+            int value = pair.Value;
+            if (totalResources.ContainsKey(key))
             {
-                totalResources[pair.Key] += pair.Value;
+                value += totalResources[key];
+                totalResources[key] = value;
             }
             else
             {
-                totalResources.Add(pair.Key, pair.Value);
+                totalResources.Add(key, value);
+                Debug.Log("Added \"" + key + "\" \"" + value + "\"");
             }
-            workmanager.ClearWorker();
+            Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
         }
-
-
-
+        workmanager.ClearWorker();
     }
     public bool win()
     {
-       if (totalResources.ContainsKey(goalQuota.Ore) && totalResources[goalQuota.Ore] >= goalQuota.OreCount){
+        Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
+
+        Debug.Log(goalQuota.Ore.OreName);
+        Debug.Log("Type: " + "Coal".GetType());
+        Debug.Log(totalResources["Coal"]);
+        if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
             return true;
         }
         return false;
@@ -54,8 +70,17 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {
-
+        {   
+            foreach (var pair in totalResources)
+            {
+                string key = pair.Key;
+                int value = pair.Value;
+                PlayerPrefs.SetInt(key, value);
+                PlayerPrefs.SetString("win", "You fufilled the Qouta!");
+                SceneManager.LoadScene(1);
+                
+            }
+            Debug.Log("You won!");
         }
     }
 }

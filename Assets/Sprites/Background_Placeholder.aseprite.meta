@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78164f6e999132b47bf74e23edf6dd9c
+guid: 721509b7849029a4bb3f332ca666199b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,9 +123,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: DropDownArrow
+  - name: Background_Placeholder
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,9 +133,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 10
-      height: 7
-    spriteID: a21cafbb0cfaeef438ba127fa0bfd2db
+      width: 320
+      height: 180
+    spriteID: 521bec51b52103b40a94ece1275d42d0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -148,25 +148,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2131080192
+      value0: 3129964728
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: DropDownArrow
+    name: Background_Placeholder
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: DropDownArrow
+    - name: Background_Placeholder
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 10
-        height: 7
-      spriteId: a21cafbb0cfaeef438ba127fa0bfd2db
+        width: 320
+        height: 180
+      spriteId: 521bec51b52103b40a94ece1275d42d0
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -185,5 +185,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 10, y: 7}
-  previousTextureSize: {x: 32, y: 16}
+  canvasSize: {x: 320, y: 180}
+  previousTextureSize: {x: 512, y: 256}

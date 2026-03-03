@@ -16,4 +16,6 @@ MonoBehaviour:
   WorkerId: 2
   portrait: {fileID: -123883647285170024, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 6
-  dialog: Give me something light since I'm not the Sharpest tool in the box.
+  dialog: Morning. Hey you're a new face! Pleasure to meet you, most folk call me
+    Sharpe around here. Hey, can you send med to A2? I know there's less coal there
+    but it has a higher cave ceiling. I would really appreciate it.
