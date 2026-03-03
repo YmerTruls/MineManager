@@ -44,4 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f6cbd2576f51f409f52654ca65f68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: FormSound
+    clip: {fileID: 8300000, guid: e7347f7803cd80e4ea12eea4860577d8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: WritingSound
+    clip: {fileID: 8300000, guid: 7499ac3cf6ce02d4a84e6973eb53d6a0, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: ClickSound
+    clip: {fileID: 8300000, guid: c46b2e294e3203642b2df9d3d67fe6cf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: PickSound
+    clip: {fileID: 8300000, guid: 9bc4a1332cf4ae146970061a7b8a02fd, type: 3}
+    volume: 0.1
+    pitch: 1
+    source: {fileID: 0}
