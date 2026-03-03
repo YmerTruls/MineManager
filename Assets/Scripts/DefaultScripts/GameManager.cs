@@ -50,20 +50,13 @@ public class GameManager : MonoBehaviour
             else
             {
                 totalResources.Add(key, value);
-                Debug.Log("Added \"" + key + "\" \"" + value + "\"");
             }
-            Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
         }
         //AudioManager.Instance.Play("PickSound");
         workmanager.ClearWorker();
     }
     public bool win()
     {
-        Debug.Log("GameManager Awake, Instance ID: " + this.GetInstanceID());
-
-        Debug.Log(goalQuota.Ore.OreName);
-        Debug.Log("Type: " + "Coal".GetType());
-        Debug.Log(totalResources["Coal"]);
         if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
             return true;
         }
@@ -72,7 +65,8 @@ public class GameManager : MonoBehaviour
     public void EndDay()
     {
         if (win())
-        {   
+        {
+            Debug.Log("Win!");
             foreach (var pair in totalResources)
             {
                 string key = pair.Key;
@@ -82,7 +76,6 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(1);
                 
             }
-            Debug.Log("You won!");
         }
     }
 }

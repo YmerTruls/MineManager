@@ -1,15 +1,16 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-
+    private Coroutine _setDialogCoroutine;
 
     private WaitForSeconds _popupDelay;
     //[SerializeField] TMP_Text textBox;
     [SerializeField] private DialogueBox dialogueBox;
-    [SerializeField] private float popupDelay = 1;
+    [SerializeField] private float popupDelay = 2;
 
     private void Awake()
     {
@@ -18,13 +19,16 @@ public class DialogueManager : MonoBehaviour
 
     public void HideDialog()
     {
+        if (_setDialogCoroutine != null)
+            StopCoroutine(_setDialogCoroutine);
+
         dialogueBox.HideDialogue();
     }
 
 
     public void ShowDialogue(string text)
     {
-        StartCoroutine(DelayedDialoge(text));
+        _setDialogCoroutine = StartCoroutine(DelayedDialoge(text));
     }
 
     IEnumerator DelayedDialoge(string text)

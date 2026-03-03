@@ -19,8 +19,6 @@ public class WorkerManager : MonoBehaviour
 
     private void Awake()
     {
-
-
         queue = new Queue<WorkerData>(initialQueue);
     }
 
