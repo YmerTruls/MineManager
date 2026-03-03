@@ -2,34 +2,8 @@ using UnityEngine;
 
 public class DoneButton : MonoBehaviour
 {
-    [SerializeField] private WorkerManager worker;
-    [SerializeField] private GameObject panel;
-    [SerializeField] private DialogueBox db;
-    [SerializeField] private GameObject nextButton;
-    //[SerializeField] private CaveNameList cavelist;
-    //public CaveData cave;
-
-
-    private void Awake()
+    public void OnClick()
     {
-        //worker = FindFirstObjectByType<WorkerManager>();
-
+        AudioManager.Instance.Play("PickSound");
     }
-    public void onClick()
-    {
-        panel.SetActive(false);
-        if (worker.GetActiveWorker() != null) {
-            //cave = cavelist.GetSelectedCave();
-            //worker.SendWorker(cave);
-            worker.ClearWorker();
-            db.HideDialogue();
-            nextButton.SetActive(true);
-            AudioManager.Instance.Play("PickSound");
-
-        }
-        else {
-            return;
-        }
-    }
-
 }

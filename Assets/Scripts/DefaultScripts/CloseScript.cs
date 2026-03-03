@@ -7,7 +7,6 @@ public class ClosePanel : MonoBehaviour
     public void Close()
     {
         panel.SetActive(false);
-        AudioManager.Instance.Play("FormSound");
     }
 }
 
