@@ -11,18 +11,29 @@ public class GameManager : MonoBehaviour
     private Dictionary<string, int> totalResources;
     private WorkerData currentWorker;
     private CaveManager caveManager;
-    [SerializeField] private QuotaData goalQuota;
+    [SerializeField] private List<QuotaData> goalQuota;
     [SerializeField] private DailyMessageManager DailyMessage;
+    [SerializeField] private List<DailyMessage> DMessage;
+    private int day;
 
     private void Awake()
     {
+        day = PlayerPrefs.GetInt("day");
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
-        DailyMessage.SetDailyMessage("Greetings Foreman F12! Welcome to the M.I.N.E. Corp mining operation! \n" +
-            "To settle in to your new position, we are only giving you access to mineshafts A1 and A2 today. \n" +
-            "We have also delivered simple forms that you can give to the worker to send them to a cave, they should be on your left.\n" +
-            "Make sure to reach the daily qouta! M.I.N.E. Corp, digging our way to the future!\n"  +
-            "Daily Qouta:  " + goalQuota.Ore.OreName + "  " + goalQuota.OreCount);
+        foreach (QuotaData quota in goalQuota)
+        {
+            int currentCount = PlayerPrefs.GetInt("quota" + quota.Ore.OreName);
+            PlayerPrefs.SetInt("quota" + quota.Ore.OreName, quota.OreCount + currentCount);
+        }
+        PlayerPrefs.SetInt("day", 0);
+        foreach (DailyMessage i in DMessage)
+        {
+            if (i.day == day)
+            {
+                DailyMessage.SetDailyMessage(i.message);
+            }
+        }
         
  
     }
@@ -57,25 +68,34 @@ public class GameManager : MonoBehaviour
     }
     public bool win()
     {
-        if (totalResources[goalQuota.Ore.OreName] >= goalQuota.OreCount){
-            return true;
+        foreach (var quota in goalQuota)
+        {
+            int goal = PlayerPrefs.GetInt("quota" + quota.Ore.OreName);
+            int currentResources = totalResources.TryGetValue(quota.Ore.OreName, out int amount) ? amount : 0;
+            if (goal > currentResources)
+            {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
     public void EndDay()
     {
         if (win())
         {
             Debug.Log("Win!");
-            foreach (var pair in totalResources)
-            {
-                string key = pair.Key;
-                int value = pair.Value;
-                PlayerPrefs.SetInt(key, value);
-                PlayerPrefs.SetString("win", "You fufilled the Qouta!");
-                SceneManager.LoadScene(1);
-                
-            }
+            PlayerPrefs.SetString("win", "You fufilled the Quota");
         }
+        else
+        {
+            PlayerPrefs.SetString("win", "You failed to fufill the quota!");
+        }
+        foreach (var pair in totalResources)
+        {
+            string key = pair.Key;
+            int value = pair.Value;
+            PlayerPrefs.SetInt(key, value);
+        }
+        SceneManager.LoadScene(1);
     }
 }

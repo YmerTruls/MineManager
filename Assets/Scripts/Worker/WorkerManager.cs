@@ -59,5 +59,9 @@ public class WorkerManager : MonoBehaviour
         activeWorker = null;
         nextButton.SetActive(true);
     }
+    public void AddWorker(WorkerData worker)
+    {
+        queue.Enqueue(worker);
+    }
 }
 

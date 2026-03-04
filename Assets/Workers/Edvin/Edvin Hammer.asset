@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Edvin Hammer
   m_EditorClassIdentifier: 
   characterName: Edvin Hammer
-  WorkerId: 3
+  WorkerId: 0
   portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 8
+  experience: 10
   dialog: 'Hey you! Name''s Edvin. You''re the new foreman right? A right sorry sod
     you are. The higher ups have been offering me your new position for years, but
     the difference between you and me is that I''m smart enough not to put myself
