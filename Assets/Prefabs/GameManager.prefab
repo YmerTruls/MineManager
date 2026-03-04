@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6826110288900119068}
   - component: {fileID: 1957759154468754591}
   - component: {fileID: 2529401145469207803}
+  - component: {fileID: 2712367439424869616}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -47,9 +48,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   workmanager: {fileID: 0}
   mineDropDown: {fileID: 0}
-  goalQuota: {fileID: 11400000, guid: 8d5193624e0b6cd4fadcacc45382f15b, type: 2}
-  DailyMessage: {fileID: 2529401145469207803}
+  goalQuota:
+  - {fileID: 11400000, guid: 8d5193624e0b6cd4fadcacc45382f15b, type: 2}
+  - {fileID: 11400000, guid: 5f11abc18b5b7c047ab49fa4d8dbc466, type: 2}
+  DailyMessage: {fileID: 2712367439424869616}
+  DataMessage:
+  - {fileID: 11400000, guid: ca92017859e9af547a66e4afc389038a, type: 2}
+  - {fileID: 11400000, guid: af88eb7f983b4eb4d823bf502fc6cf84, type: 2}
+  - {fileID: 11400000, guid: 62522d0841ad5e442959d3bec6b06ab2, type: 2}
+  - {fileID: 11400000, guid: 4bcbd08dc53be714e9fab82f9268cc60, type: 2}
+  - {fileID: 11400000, guid: 00b48d58ff08f924bb78b3ff9fc2868d, type: 2}
+  - {fileID: 11400000, guid: 2b78a50c4f5d0fb4996b7207fb95dddb, type: 2}
+  - {fileID: 11400000, guid: 97549f01349190448891ae14841f36ac, type: 2}
 --- !u!114 &2529401145469207803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6340927535397695598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9244a93d633e7184c92e4c2020eb5707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DailyMessageText: {fileID: 0}
+--- !u!114 &2712367439424869616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
