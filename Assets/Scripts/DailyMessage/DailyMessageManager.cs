@@ -3,15 +3,13 @@ using TMPro;
 
 public class DailyMessageManager : MonoBehaviour
 {
+    private int day;
     public TMP_Text DailyMessageText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
     
-
-    // Update is called once per frame
-    void Update()
+    public void Awake()
     {
-        
+        day = PlayerPrefs.GetInt("day");
+
     }
 
     public void SetDailyMessage(string message)

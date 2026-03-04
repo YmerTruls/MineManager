@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GuySharpe
   m_EditorClassIdentifier: 
   characterName: Guy Sharpe
-  WorkerId: 2
+  WorkerId: 1
   portrait: {fileID: -123883647285170024, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 6
   dialog: Morning. Hey you're a new face! Pleasure to meet you, most folk call me
