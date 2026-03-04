@@ -13,12 +13,13 @@ public class GameManager : MonoBehaviour
     private CaveManager caveManager;
     [SerializeField] private List<QuotaData> goalQuota;
     [SerializeField] private DailyMessageManager DailyMessage;
-    [SerializeField] private List<DailyMessage> DMessage;
-    private int day;
+    [SerializeField] private List<DailyMessageData> DataMessage;
+    private int daycount;
 
     private void Awake()
     {
-        day = PlayerPrefs.GetInt("day");
+        PlayerPrefs.SetInt("day", 0);
+        daycount = PlayerPrefs.GetInt("day");
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
         foreach (QuotaData quota in goalQuota)
@@ -26,12 +27,12 @@ public class GameManager : MonoBehaviour
             int currentCount = PlayerPrefs.GetInt("quota" + quota.Ore.OreName);
             PlayerPrefs.SetInt("quota" + quota.Ore.OreName, quota.OreCount + currentCount);
         }
-        PlayerPrefs.SetInt("day", 0);
-        foreach (DailyMessage i in DMessage)
+        foreach (DailyMessageData text in DataMessage)
         {
-            if (i.day == day)
-            {
-                DailyMessage.SetDailyMessage(i.message);
+            if (text.day == daycount)
+            {   
+                Debug.Log("funkar");
+                DailyMessage.SetDailyMessage(text.message);
             }
         }
         

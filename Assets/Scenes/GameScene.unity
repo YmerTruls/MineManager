@@ -473,19 +473,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.13302752
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.008174387
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.7339449
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9809264
       objectReference: {fileID: 0}
     - target: {fileID: 3236299234315763727, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -555,30 +555,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 770922314711549807, guid: de55f4c2a76d54e4793c2823dfd8d7e3, type: 3}
   m_PrefabInstance: {fileID: 3658353434043650662}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1835296517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-  m_PrefabInstance: {fileID: 6070005041103324108}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1835296518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835296517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9244a93d633e7184c92e4c2020eb5707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DailyMessageText: {fileID: 3185366980503448001}
 --- !u!114 &1835296519 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
   m_PrefabInstance: {fileID: 6070005041103324108}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835296517}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6fa8d0ed244a1704491d42ac98ee2994, type: 3}
@@ -4605,57 +4587,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1964306926}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: DailyMessage
-      value: 
-      objectReference: {fileID: 1835296518}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: mineDropDown
       value: 
       objectReference: {fileID: 3381052692645802736}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: message.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: goalQuota.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[0]'
+    - target: {fileID: 2712367439424869616, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: DailyMessageText
       value: 
-      objectReference: {fileID: 11400000, guid: ca92017859e9af547a66e4afc389038a, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: af88eb7f983b4eb4d823bf502fc6cf84, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 62522d0841ad5e442959d3bec6b06ab2, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4bcbd08dc53be714e9fab82f9268cc60, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[4]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 00b48d58ff08f924bb78b3ff9fc2868d, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[5]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 2b78a50c4f5d0fb4996b7207fb95dddb, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'message.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 97549f01349190448891ae14841f36ac, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'goalQuota.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 8d5193624e0b6cd4fadcacc45382f15b, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'goalQuota.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 5f11abc18b5b7c047ab49fa4d8dbc466, type: 2}
+      objectReference: {fileID: 3185366980503448001}
     - target: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -4703,10 +4641,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1835296518}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
 --- !u!222 &6089749404342087229
 CanvasRenderer:

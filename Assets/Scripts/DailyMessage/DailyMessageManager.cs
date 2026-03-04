@@ -8,7 +8,7 @@ public class DailyMessageManager : MonoBehaviour
     
     public void Awake()
     {
-        day = PlayerPrefs.GetInt("day");
+        
 
     }
 
