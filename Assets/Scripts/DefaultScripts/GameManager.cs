@@ -97,6 +97,6 @@ public class GameManager : MonoBehaviour
             int value = pair.Value;
             PlayerPrefs.SetInt(key, value);
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("EndOfDayScreen");
     }
 }
