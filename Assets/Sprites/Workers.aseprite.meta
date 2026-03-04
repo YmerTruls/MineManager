@@ -145,7 +145,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Workers_0
+  - name: Edvin
     originalName: 
     pivot: {x: 0, y: 0}
     alignment: 0
@@ -153,7 +153,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 3
+      x: 4
       y: 4
       width: 48
       height: 64
@@ -166,7 +166,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Workers_1
+  - name: Sharpe
     originalName: 
     pivot: {x: 0, y: 0}
     alignment: 0
@@ -174,7 +174,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 51
+      x: 52
       y: 4
       width: 48
       height: 64
@@ -187,7 +187,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Workers_2
+  - name: William
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 4
+      width: 48
+      height: 64
+    spriteID: 5f80a36fc8920614fba04e904d68ac1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Emma
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -195,11 +216,116 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 99
+      x: 148
       y: 4
       width: 48
       height: 64
-    spriteID: 5f80a36fc8920614fba04e904d68ac1c
+    spriteID: 6f4843a4495bbc343b1a5633b158fede
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Jane
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 4
+      width: 48
+      height: 64
+    spriteID: 40734612051df5441b70031965523976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Robert
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 4
+      width: 48
+      height: 64
+    spriteID: e197220ab6b0d954ebc312705ecccd22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Marcus
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 4
+      width: 48
+      height: 64
+    spriteID: 42a262478596cc746ab0292dc619dd8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Elsa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 4
+      width: 48
+      height: 64
+    spriteID: 3f3eba9d464eae34984fb475063df1eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Workers_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 388
+      y: 4
+      width: 48
+      height: 64
+    spriteID: df2cf112c88f95a48a827ab084595458
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -225,9 +351,9 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
+        x: 0
         y: 0
-        width: 143
+        width: 432
         height: 64
       spriteId: 545f30778d1610546b5d1af7f261eb7c
     linkedCells: []
@@ -308,5 +434,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 144, y: 64}
-  previousTextureSize: {x: 256, y: 128}
+  canvasSize: {x: 432, y: 64}
+  previousTextureSize: {x: 512, y: 128}
