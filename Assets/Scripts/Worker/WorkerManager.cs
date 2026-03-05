@@ -37,7 +37,7 @@ public class WorkerManager : MonoBehaviour
         
         nextButton.SetActive(false);
         WorkerData next = queue.Dequeue();
-        SetWorker(next);
+        view.Show(next);
 
 
         // Worker Enter
@@ -45,18 +45,14 @@ public class WorkerManager : MonoBehaviour
             view.CharacterMovement(new Vector3(-1.9f, -0.03f, 0), new Vector3(0, -0.03f, 0))
         );
 
+
+        activeWorker = next;
         dialogueManager.ShowDialogue(next.dialog);
-    }
-
-    public void SetWorker(WorkerData worker)
-    {
-        view.Show(worker);
-        activeWorker = worker;
-
     }
 
     public void ClearWorker()
     {
+        activeWorker = null;
         dialogueManager.HideDialog();
 
         StartCoroutine(ClearWorkerRoutine());
