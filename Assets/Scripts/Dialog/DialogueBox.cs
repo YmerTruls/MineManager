@@ -153,5 +153,7 @@ public class DialogueBox : MonoBehaviour
                 yield return _simpleDelay;
             }
         }
+        // After all text is written, hide "fast forward" button
+        SetButtonActive(NextButton, false);
     }
 }
