@@ -473,19 +473,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.13302752
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.008174387
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.7339449
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9809264
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3236299234315763727, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4591,6 +4591,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3381052692645802736}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: AllCaves.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: goalQuota.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4598,6 +4602,18 @@ PrefabInstance:
       propertyPath: AllWorkers.Array.size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: 'goalQuota.Array.data[2]'
       value: 
