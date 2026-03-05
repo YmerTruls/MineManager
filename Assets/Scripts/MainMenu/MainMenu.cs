@@ -5,11 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Awake()
     {
-        PlayerPrefs.SetInt("day", 0);
-        PlayerPrefs.SetInt("fail", 0);
-        PlayerPrefs.SetInt("success", 0);
-
-
+        PlayerPrefs.DeleteAll();
     }
 
     public void PlayGame()
