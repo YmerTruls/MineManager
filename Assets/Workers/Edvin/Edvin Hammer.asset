@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5e1d1ac9c0f83438e1fae6000fc660, type: 3}
+  m_Name: Edvin Hammer
+  m_EditorClassIdentifier: 
+  characterName: Edvin Hammer
+  WorkerId: 0
+  portrait: {fileID: 6732904177202368728, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
+  experience: 10
+  dialog: 'Hey you! Name''s Edvin. You''re the new foreman right? A right sorry sod
+    you are. The higher ups have been offering me your new position for years, but
+    the difference between you and me is that I''m smart enough not to put myself
+    in your now hopeless position. Well your new job is to send us into those dangerous
+    caves, so get on with it! Just send me to A1 unless you wanna end up like the
+    guy before you. '
