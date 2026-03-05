@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Emma Mardough
   m_EditorClassIdentifier: 
   characterName: Emma Mardough
-  WorkerId: 5
-  portrait: {fileID: 0}
+  WorkerId: 3
+  portrait: {fileID: 484891049275120805, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 4
   dialog: 

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Robert Lampard
   m_EditorClassIdentifier: 
   characterName: Robert Lampard
-  WorkerId: 0
+  WorkerId: 2
   portrait: {fileID: 0}
   experience: 6
   dialog: 
