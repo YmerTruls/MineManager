@@ -5,7 +5,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Awake()
     {
-        PlayerPrefs.DeleteAll();
+       PlayerPrefs.DeleteAll();
     }
 
     public void PlayGame()

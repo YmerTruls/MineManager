@@ -22,7 +22,9 @@ public class WorkerManager : MonoBehaviour
 
     private void Start()
     {
-        ClearWorker();
+        dialogueManager.HideDialog();
+        activeWorker = null;
+        nextButton.SetActive(true);
     }
 
     public WorkerData GetActiveWorker() => activeWorker;

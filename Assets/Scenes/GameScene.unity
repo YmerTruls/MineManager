@@ -510,6 +510,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WorkerView
       objectReference: {fileID: 0}
+    - target: {fileID: 1418497064212774213, guid: 714bbea363f084846a755735a7c73f20, type: 3}
+      propertyPath: steps
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418497064212774213, guid: 714bbea363f084846a755735a7c73f20, type: 3}
+      propertyPath: travelTime
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2156398377191429405, guid: 714bbea363f084846a755735a7c73f20, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
