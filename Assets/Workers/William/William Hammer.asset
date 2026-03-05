@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: William Hammer
   m_EditorClassIdentifier: 
   characterName: William Hammer
-  WorkerId: 3
-  portrait: {fileID: 0}
+  WorkerId: 2
+  portrait: {fileID: 6806288595276267877, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 8
   dialog: 

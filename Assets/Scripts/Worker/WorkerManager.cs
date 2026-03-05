@@ -11,15 +11,11 @@ public class WorkerManager : MonoBehaviour
     [SerializeField] private WorkerView view;
     [SerializeField] private CaveManager cavemanager;
     [SerializeField] private GameObject endDayButton;
-
-    [Header("Queue")]
-    [SerializeField] private List<WorkerData> initialQueue = new List<WorkerData>();
-
-    private Queue<WorkerData> queue;
+    private Queue<WorkerData> queue = new Queue<WorkerData>();
 
     private void Awake()
     {
-        queue = new Queue<WorkerData>(initialQueue);
+
     }
 
     private void Start()
