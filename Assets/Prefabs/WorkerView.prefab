@@ -100,3 +100,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23cba7510d4f1f49bdf869309a6d672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steps: 6
+  travelTime: 2
