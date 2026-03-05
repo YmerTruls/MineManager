@@ -16,4 +16,7 @@ MonoBehaviour:
   WorkerId: 2
   portrait: {fileID: 6806288595276267877, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 8
-  dialog: 
+  dialog: '''Ello there! We have''t been introduced right? T''name''s William. William
+    Hammer. You''ve probably met my brother Edvin right? Look I know he can be difficult
+    but he''s a good man. Listen to him. He wants ya to do good. And he wants all
+    of us to survive.'

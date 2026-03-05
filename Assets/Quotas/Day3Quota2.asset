@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52600ce4fbba1b849895832c3d822c05, type: 3}
   m_Name: Day3Quota2
   m_EditorClassIdentifier: 
-  Ore: {fileID: 0}
+  Ore: {fileID: 11400000, guid: c8d04504a1862ba4b896b6ddc652722d, type: 2}
   OreCount: 5
   ID: 0
