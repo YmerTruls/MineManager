@@ -1,3 +1,5 @@
+using System.Collections;
+using UnityEditor.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
@@ -21,6 +23,21 @@ public class WorkerView : MonoBehaviour
     {
         spriteRenderer.sprite = null;
         spriteRenderer.enabled = false;
+    }
+
+    public IEnumerator CharacterMovement(Vector2 start, Vector2 end)
+    {
+        transform.position = start;
+
+        float time = 0.0f;
+
+        while (true)
+        {
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = end;
     }
 }
 
