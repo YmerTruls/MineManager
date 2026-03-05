@@ -4678,9 +4678,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3381052692645802736}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: AllCaves.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: goalQuota.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: AllWorkers.Array.size
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d30bc471808c994e9377cec9f586543, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6e0aa0d5440c5bd42a58692a2ea3ac74, type: 2}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: 'AllWorkers.Array.data[0]'
       value: 

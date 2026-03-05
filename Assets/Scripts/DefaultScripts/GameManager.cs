@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private int daycount;
     private string quotaCount;
     [SerializeField] private List<WorkerData> AllWorkers;
+    [SerializeField] private List<CaveData> AllCaves;
 
     private void Awake()
     {
@@ -48,6 +49,13 @@ public class GameManager : MonoBehaviour
             if (worker.WorkerId <= daycount)
             {
                 workmanager.AddWorker(worker);
+            }
+        }
+        foreach (CaveData caves in AllCaves)
+        {
+            if (caves.CaveId <= daycount)
+            {
+
             }
         }
 
