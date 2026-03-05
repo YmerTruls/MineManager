@@ -27,10 +27,12 @@ public class WorkerManager : MonoBehaviour
     public void NextWorker()
     {   
 
+        // Set new Worker
         WorkerData next = queue.Dequeue();
-
         SetWorker(next);
         nextButton.SetActive(false);
+
+        // Worker Enter
         dialogueManager.ShowDialogue(next.dialog);
     }
 
