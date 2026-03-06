@@ -15,28 +15,56 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DailyMessageManager DailyMessage;
     [SerializeField] private List<DailyMessageData> DataMessage;
     private int daycount;
+    private string quotaCount;
+    [SerializeField] private List<WorkerData> AllWorkers;
+    [SerializeField] private List<CaveData> AllCaves;
 
     private void Awake()
     {
-        PlayerPrefs.SetInt("day", 0);
+        quotaCount = "Quota for today: \n";
         daycount = PlayerPrefs.GetInt("day");
         caveManager = new CaveManager();
         totalResources = new Dictionary<string, int> { };
         foreach (QuotaData quota in goalQuota)
         {
-            int currentCount = PlayerPrefs.GetInt("quota" + quota.Ore.OreName);
-            PlayerPrefs.SetInt("quota" + quota.Ore.OreName, quota.OreCount + currentCount);
+            if (quota.ID == daycount)
+            {
+                int currentCount = PlayerPrefs.GetInt("quota" + quota.Ore.OreName);
+                PlayerPrefs.SetInt("quota" + quota.Ore.OreName, quota.OreCount + currentCount);
+                quotaCount += $"{quota.Ore.OreName}: {quota.OreCount}\n";
+            }
+
         }
         foreach (DailyMessageData text in DataMessage)
         {
             if (text.day == daycount)
             {   
-                Debug.Log("funkar");
-                DailyMessage.SetDailyMessage(text.message);
+                string NewMessage = text.message + " \n" + "M.I.N.E. CORP, Diggin our way to future!\n" + quotaCount;
+                DailyMessage.AddAndSetDailyMessage(NewMessage);
             }
         }
+        foreach (WorkerData worker in AllWorkers)
+        {
+            if (worker.WorkerId <= daycount)
+            {
+                workmanager.AddWorker(worker);
+            }
+        }
+        foreach (CaveData caves in AllCaves)
+        {
+            if (caves.CaveId <= daycount)
+            {
+
+            }
+        }
+
         
  
+    }
+
+    public void setWorkerDialoug(WorkerData worker)
+    {
+
     }
 
     public void NextWorker(){
@@ -84,12 +112,15 @@ public class GameManager : MonoBehaviour
     {
         if (win())
         {
-            Debug.Log("Win!");
             PlayerPrefs.SetString("win", "You fufilled the Quota");
+            int successcount = PlayerPrefs.GetInt("success");
+            PlayerPrefs.SetInt("success", successcount + 1);
         }
         else
         {
             PlayerPrefs.SetString("win", "You failed to fufill the quota!");
+            int failcount = PlayerPrefs.GetInt("fail");
+            PlayerPrefs.SetInt("fail", failcount + 1);
         }
         foreach (var pair in totalResources)
         {
@@ -97,6 +128,6 @@ public class GameManager : MonoBehaviour
             int value = pair.Value;
             PlayerPrefs.SetInt(key, value);
         }
-        SceneManager.LoadScene("EndOfDayScreen");
+        SceneManager.LoadScene(2);
     }
 }

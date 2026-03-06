@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Robert Lampard
   m_EditorClassIdentifier: 
   characterName: Robert Lampard
-  WorkerId: 0
-  portrait: {fileID: 0}
+  WorkerId: 1
+  portrait: {fileID: 496898093929632119, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 6
-  dialog: 
+  dialog: Good m-morning! I'm Robert. You're, uh, the new foreman right? I hope you've
+    settled in to your new position. Listen, when B1 eventually opens, don't send
+    me there. I don't do well in the dark. Please.

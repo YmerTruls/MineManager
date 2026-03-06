@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Emma Mardough
   m_EditorClassIdentifier: 
   characterName: Emma Mardough
-  WorkerId: 5
-  portrait: {fileID: 0}
+  WorkerId: 2
+  portrait: {fileID: 484891049275120805, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 4
-  dialog: 
+  dialog: '*You here heavy footsteps echo towards you. The whir of machinery and
+    the grasping of air came from a being more steel than flesh. It shuffle towards
+    your desk, hunched and stiff. From it a screech emerged, it sounded as the cry
+    of dying beast* ASSIGN ME. ASSIGN ME. ASSIGN ME. ASSIGN ME.'

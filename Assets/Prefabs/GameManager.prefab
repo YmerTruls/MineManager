@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6826110288900119068}
   - component: {fileID: 1957759154468754591}
-  - component: {fileID: 2529401145469207803}
-  - component: {fileID: 2712367439424869616}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,7 +49,9 @@ MonoBehaviour:
   goalQuota:
   - {fileID: 11400000, guid: 8d5193624e0b6cd4fadcacc45382f15b, type: 2}
   - {fileID: 11400000, guid: 5f11abc18b5b7c047ab49fa4d8dbc466, type: 2}
-  DailyMessage: {fileID: 2712367439424869616}
+  - {fileID: 11400000, guid: 8d30bc471808c994e9377cec9f586543, type: 2}
+  - {fileID: 11400000, guid: 6e0aa0d5440c5bd42a58692a2ea3ac74, type: 2}
+  DailyMessage: {fileID: 0}
   DataMessage:
   - {fileID: 11400000, guid: ca92017859e9af547a66e4afc389038a, type: 2}
   - {fileID: 11400000, guid: af88eb7f983b4eb4d823bf502fc6cf84, type: 2}
@@ -60,29 +60,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 00b48d58ff08f924bb78b3ff9fc2868d, type: 2}
   - {fileID: 11400000, guid: 2b78a50c4f5d0fb4996b7207fb95dddb, type: 2}
   - {fileID: 11400000, guid: 97549f01349190448891ae14841f36ac, type: 2}
---- !u!114 &2529401145469207803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6340927535397695598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9244a93d633e7184c92e4c2020eb5707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DailyMessageText: {fileID: 0}
---- !u!114 &2712367439424869616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6340927535397695598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9244a93d633e7184c92e4c2020eb5707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DailyMessageText: {fileID: 0}
+  AllWorkers:
+  - {fileID: 11400000, guid: 5deeebe936f4cd5499f022670697b40a, type: 2}
+  - {fileID: 11400000, guid: 9c38cfb244205e04cbcddbf48b5089b0, type: 2}
+  - {fileID: 11400000, guid: da37815d2781364458e6111385ee8346, type: 2}
+  - {fileID: 11400000, guid: dad7a53e7969b4f46ae2cc30f40e7f94, type: 2}
+  - {fileID: 11400000, guid: 4210cfdd785ccf946962dcd8dde45c2b, type: 2}
+  - {fileID: 11400000, guid: 826f1048bd8aa0a48be517e3edaaee93, type: 2}
+  - {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
+  - {fileID: 11400000, guid: 4520207d070bd2945b1a58b77ec5277a, type: 2}
+  AllCaves:
+  - {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
+  - {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
+  - {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}
