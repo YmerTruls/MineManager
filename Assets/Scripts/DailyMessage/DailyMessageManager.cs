@@ -20,7 +20,10 @@ public class DailyMessageManager : MonoBehaviour
     {
         SaveObject.Instance.MessageList.Add(message);
         SwitchDailyMessage(-1); // Switch to last message
-        TabManager.LoadTabs();
+        if (GetDailyMessageCount() > 1)
+        {
+            TabManager.LoadTabs();
+        }
     }
 
     public int GetDailyMessageCount()

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4093787706499551325}
   - component: {fileID: 7730347015500527321}
   - component: {fileID: 8174455606954582235}
-  - component: {fileID: 3028117034250988993}
   - component: {fileID: 6474654866328885011}
   m_Layer: 5
   m_Name: Tab
@@ -123,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3028117034250988993}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayCloseSound, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -135,18 +134,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3028117034250988993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4017875046198862503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43cc1f23c620c0047afaf05385ecf33b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6474654866328885011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,10 +179,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1493541091316067157}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -7}
-  m_SizeDelta: {x: 12, y: 14}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1408057523524916780
 CanvasRenderer:

@@ -34,10 +34,12 @@ public class TabObject : MonoBehaviour
     {
         if (selected)
         {
-            rect.sizeDelta = new Vector2(18, 14);
+            TabNumberText.SetText("Day " + (tabIndex + 1).ToString());
+            rect.sizeDelta = new Vector2(32, 14);
         }
         else
         {
+            TabNumberText.SetText((tabIndex + 1).ToString());
             rect.sizeDelta = new Vector2(12, 14);
         }
     }
