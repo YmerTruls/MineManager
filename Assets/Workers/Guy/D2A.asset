@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D2A
+  m_EditorClassIdentifier: 
+  day: 1
+  text: "Hey, big boss! Truly appreciated the favour you did for me yesterday. Didn\u2019t
+    wake up with a sore head this morning, hah! Now, how I like things is you do
+    something for me and I do something for you. You follow my requests and I\u2019ll
+    give you tasty details about this and that. Send me to A2 and tomorrow I\u2019ll
+    tell you something you really want to know."
+  approval: 0
+  pref: 1
+  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
