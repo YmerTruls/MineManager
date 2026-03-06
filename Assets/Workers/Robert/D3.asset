@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D3
+  m_EditorClassIdentifier: 
+  day: 2
+  text: "G-Good morning! Robert, if you forgot! I heard they set you up yesterday.
+    Yeah they sometimes do that to you. But don\u2019t let it get you down! If you
+    don\u2019t think about the bad stuff they do to us then it\u2019s easier to filter
+    out the wake-up siren in the morning! You can even sometimes smile! S-sorry you
+    probably already knew that. You can just send me to work now."
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}

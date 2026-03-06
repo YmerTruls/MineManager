@@ -19,3 +19,10 @@ MonoBehaviour:
   dialog: Morning. Hey you're a new face! Pleasure to meet you, most folk call me
     Sharpe around here. Hey, can you send med to A2? I know there's less coal there
     but it has a higher cave ceiling. I would really appreciate it.
+  Approval: 0
+  pref: 0
+  DialogData:
+  - {fileID: 11400000, guid: f4c0d28e043e3194ca7c389257b8d3f3, type: 2}
+  - {fileID: 11400000, guid: 0ef94811e3322c546986a7ae10588e1c, type: 2}
+  - {fileID: 11400000, guid: 2497546647518534eba4dc360b84c3d2, type: 2}
+  currentDialog: {fileID: 0}

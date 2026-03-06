@@ -1,21 +1,28 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CaveNameList : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
-    [SerializeField] private List<CaveData> Caves;
+    private List<CaveData> Caves = new List<CaveData>();
 
     private void Awake()
     {
+        
+    }
+
+    public CaveData GetSelectedCave() { return Caves[dropdown.value]; }
+
+    public void addCave(CaveData cave)
+    {
+        Caves.Add(cave);
         dropdown.ClearOptions();
         var names = new List<string>();
         foreach (var w in Caves) names.Add(w.CaveName);
         dropdown.AddOptions(names);
     }
-
-    public CaveData GetSelectedCave() { return Caves[dropdown.value]; }
 
     public void OnValueChanged()
     {
