@@ -18,8 +18,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void Awake()
-    {
-        PlayerPrefs.DeleteAll();
-    }
 }
