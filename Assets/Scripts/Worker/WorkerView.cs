@@ -1,6 +1,5 @@
 using System.Collections;
 using System;
-using UnityEditor.UI;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
