@@ -39,9 +39,8 @@ public class GameManager : MonoBehaviour
         {
             if (text.day == daycount)
             {   
-                Debug.Log("funkar");
                 string NewMessage = text.message + " \n" + "M.I.N.E. CORP, Diggin our way to future!\n" + quotaCount;
-                DailyMessage.SetDailyMessage(NewMessage);
+                DailyMessage.AddAndSetDailyMessage(NewMessage);
             }
         }
         foreach (WorkerData worker in AllWorkers)
@@ -113,7 +112,6 @@ public class GameManager : MonoBehaviour
     {
         if (win())
         {
-            Debug.Log("Win!");
             PlayerPrefs.SetString("win", "You fufilled the Quota");
             int successcount = PlayerPrefs.GetInt("success");
             PlayerPrefs.SetInt("success", successcount + 1);
