@@ -5,7 +5,7 @@ using TMPro;
 public class DailyMessageManager : MonoBehaviour
 {
     private int day;
-    private List<string> MessageList = new List<string>();
+    //[SerializeField] private SaveObject saveObject;
     private int MessageIndex;
     public TMP_Text DailyMessageText;
     [SerializeField] private TabController TabManager;
@@ -15,40 +15,26 @@ public class DailyMessageManager : MonoBehaviour
     [SerializeField] private GameObject PreviousButton;
     private int dialogPage = 1;
 
-    public void Awake()
-    {
-        AddAndSetDailyMessage("string mess");
-        AddAndSetDailyMessage("2");
-        AddAndSetDailyMessage("3");
-    }
 
     public void AddAndSetDailyMessage(string message)
     {
-        MessageList.Add(message);
-        Debug.Log("LIST ---------");
-        foreach (var item in MessageList)
-        {
-            Debug.Log(item);
-        }
-        Debug.Log("LIST END -----");
-
+        SaveObject.Instance.MessageList.Add(message);
         SwitchDailyMessage(-1); // Switch to last message
-        Debug.Log("Shoud run");
-        TabManager.AddTab(this.GetDailyMessageCount() - 1);
+        TabManager.LoadTabs();
     }
 
     public int GetDailyMessageCount()
     {
-        return MessageList.Count;
+        return SaveObject.Instance.MessageList.Count;
     }
 
     public void SwitchDailyMessage(int pageNumber)
     {
         // Allow for reverse indexing
-        if (pageNumber < 0) { pageNumber += MessageList.Count; }
+        if (pageNumber < 0) { pageNumber += GetDailyMessageCount(); }
 
         MessageIndex = pageNumber;
-        string message = MessageList[pageNumber];
+        string message = SaveObject.Instance.MessageList[pageNumber];
         DailyMessageText.SetText(message);
         dialogPage = 1;
         DisplayPage(dialogPage);

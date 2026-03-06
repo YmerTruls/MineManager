@@ -572,8 +572,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabButtonPrefab: {fileID: 6474654866328885011, guid: 2182543db75a0e04194639f1db765429, type: 3}
-  DailyMessageManager: {fileID: 4791864091888970252}
-  DailyMessagePanel: {fileID: 2216724057292383435}
+  dailyMessageManager: {fileID: 4791864091888970252}
+  dailyMessagePanel: {fileID: 2216724057292383435}
 --- !u!212 &595210649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1001,6 +1001,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
+--- !u!1 &1357010513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1357010515}
+  - component: {fileID: 1357010514}
+  m_Layer: 0
+  m_Name: SaveObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1357010514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357010513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16185f2f999741b40904e73c7ff0fa1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MessageList: []
+--- !u!4 &1357010515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357010513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07578041, y: -0.2083374, z: -3.4349723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1382617592 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6556605434888229966, guid: 970a28bae0ec423458111c6037ca68bd, type: 3}
@@ -6883,3 +6928,4 @@ SceneRoots:
   - {fileID: 392411180}
   - {fileID: 1160511719}
   - {fileID: 1904098323}
+  - {fileID: 1357010515}

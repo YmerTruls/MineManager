@@ -112,7 +112,6 @@ public class GameManager : MonoBehaviour
     {
         if (win())
         {
-            Debug.Log("Win!");
             PlayerPrefs.SetString("win", "You fufilled the Quota");
             int successcount = PlayerPrefs.GetInt("success");
             PlayerPrefs.SetInt("success", successcount + 1);

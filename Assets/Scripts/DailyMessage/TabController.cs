@@ -4,23 +4,34 @@ using UnityEngine;
 
 public class TabController : MonoBehaviour
 {
-    [SerializeField] private TabButton tabButtonPrefab;
-    private List<TabButton> TabList = new List<TabButton>();
-    [SerializeField] private DailyMessageManager DailyMessageManager;
-    [SerializeField] private Transform DailyMessagePanel;
+    [SerializeField] private TabObject tabButtonPrefab;
+    private List<TabObject> tabList = new List<TabObject>();
+    [SerializeField] private DailyMessageManager dailyMessageManager;
+    [SerializeField] private Transform dailyMessagePanel;
+
+    public void LoadTabs()
+    {
+        for (int i = 0; i < dailyMessageManager.GetDailyMessageCount(); i++)
+        {
+            AddTab(i);
+        }
+        tabList[0].setSelected(true);
+    }
 
     public void AddTab(int pageIndex)
     {
-        Debug.Log("Added: " + pageIndex);
-
-        TabButton tabButton = Instantiate(tabButtonPrefab, DailyMessagePanel);
+        TabObject tabButton = Instantiate(tabButtonPrefab, dailyMessagePanel);
         tabButton.Init(this, pageIndex);
 
-        TabList.Add(tabButton);
+        tabList.Add(tabButton);
     }
 
     public void SwitchPage(int pageIndex)
     {
-        DailyMessageManager.SwitchDailyMessage(pageIndex);
+        dailyMessageManager.SwitchDailyMessage(pageIndex);
+        for (int i = 0; i < tabList.Count; i++) 
+        {
+            tabList[i].setSelected(i == pageIndex);
+        }
     }
 }
