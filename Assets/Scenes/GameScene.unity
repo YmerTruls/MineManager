@@ -527,6 +527,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97bd4545d7e57894ba4833ff996a0e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &569788263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569788264}
+  - component: {fileID: 569788265}
+  m_Layer: 0
+  m_Name: TabManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569788264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569788263}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.323287, y: -0.5506762, z: -133.64056}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2216724057292383435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569788265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569788263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0d23f0933a66442942bdabcb5291d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButtonPrefab: {fileID: 6474654866328885011, guid: 2182543db75a0e04194639f1db765429, type: 3}
+  DailyMessageManager: {fileID: 4791864091888970252}
+  DailyMessagePanel: {fileID: 2216724057292383435}
 --- !u!212 &595210649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2676,6 +2723,7 @@ RectTransform:
   - {fileID: 2731085181414953841}
   - {fileID: 1160464849}
   - {fileID: 56160344}
+  - {fileID: 569788264}
   m_Father: {fileID: 1816884141888642053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4308,6 +4356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DailyMessageText: {fileID: 3185366980503448001}
+  TabManager: {fileID: 569788265}
   NextButton: {fileID: 1160464848}
   PreviousButton: {fileID: 56160343}
 --- !u!114 &4962468383497892409
@@ -4484,7 +4533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.56078434}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4492,7 +4541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -163584030564223507, guid: b4d4cefe6a6e1024ab05e85dbc933725, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5057,74 +5106,6 @@ PrefabInstance:
       propertyPath: mineDropDown
       value: 
       objectReference: {fileID: 3381052692645802736}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: AllCaves.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: goalQuota.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: AllWorkers.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllCaves.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllCaves.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllCaves.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'goalQuota.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 8d30bc471808c994e9377cec9f586543, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'goalQuota.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 6e0aa0d5440c5bd42a58692a2ea3ac74, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[0]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 5deeebe936f4cd5499f022670697b40a, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[1]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 9c38cfb244205e04cbcddbf48b5089b0, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[2]'
-      value: 
-      objectReference: {fileID: 11400000, guid: da37815d2781364458e6111385ee8346, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[3]'
-      value: 
-      objectReference: {fileID: 11400000, guid: dad7a53e7969b4f46ae2cc30f40e7f94, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[4]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4210cfdd785ccf946962dcd8dde45c2b, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[5]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 826f1048bd8aa0a48be517e3edaaee93, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[6]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 98d83b3edfc35124a9eeed6ce6a3aa5c, type: 2}
-    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: 'AllWorkers.Array.data[7]'
-      value: 
-      objectReference: {fileID: 11400000, guid: 4520207d070bd2945b1a58b77ec5277a, type: 2}
-    - target: {fileID: 2712367439424869616, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: DailyMessageText
-      value: 
-      objectReference: {fileID: 3185366980503448001}
     - target: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -6320,7 +6301,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -163584030564223507, guid: b4d4cefe6a6e1024ab05e85dbc933725, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
