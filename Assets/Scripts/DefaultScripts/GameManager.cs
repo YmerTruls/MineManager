@@ -47,12 +47,12 @@ public class GameManager : MonoBehaviour
         {
             if (worker.WorkerId <= daycount)
             {
-                worker.Approval = PlayerPrefs.GetInt(worker.characterName);
                 workmanager.AddWorker(worker);
                 foreach(DialogData dialog in worker.DialogData) {
-                    if (worker.pref == dialog.pref && daycount == dialog.day)
+                    if (PlayerPrefs.GetInt("pref" + worker.characterName, 0) == dialog.pref && daycount == dialog.day)
                     {
                         int approval = PlayerPrefs.GetInt(worker.characterName);
+                        Debug.Log(PlayerPrefs.GetInt("pref" + worker.characterName, 0) + "  " + worker.characterName);
                         if (approval >= dialog.approval)
                         {
                             worker.dialog = dialog.text;
@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
             }
+            PlayerPrefs.SetInt("pref" + worker.characterName, 0);
         }
         foreach (CaveData caves in AllCaves)
         {
@@ -73,12 +74,6 @@ public class GameManager : MonoBehaviour
         
  
     }
-
-    public void setWorkerDialoug(WorkerData worker)
-    {
-
-    }
-
     public void NextWorker(){
         workmanager.NextWorker();
     }

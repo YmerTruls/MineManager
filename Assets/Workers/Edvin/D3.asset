@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D2A
+  m_Name: D3
   m_EditorClassIdentifier: 
-  day: 1
-  text: "They 'aven't opened any B-shafts yet? Bloody Nora. You\u2019re in a setup,
-    see? Don\u2019t matter where you send me this time. You\u2019re gonna fail and
-    we're getting punished for it. Make sure you perform after this \u201Clesson\u201D
-    or you\u2019ll not see the end of the week."
+  day: 2
+  text: 
   approval: 0
-  pref: 1
+  pref: 0
   cavePref: {fileID: 0}

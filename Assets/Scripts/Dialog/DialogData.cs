@@ -6,7 +6,7 @@ public class DialogData : ScriptableObject
     public int day;
     public string text;
     public int approval;
-    public bool pref;
+    public int pref;
     public CaveData cavePref;
     
 }

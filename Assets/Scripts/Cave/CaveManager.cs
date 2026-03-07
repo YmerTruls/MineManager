@@ -23,14 +23,7 @@ public class CaveManager
         {
             int CurrentApproval = PlayerPrefs.GetInt(worker.characterName);
             PlayerPrefs.SetInt(worker.characterName, CurrentApproval + 1);
-            worker.Approval++;
-            worker.pref = true;
-            Debug.Log(worker.characterName + " " + worker.pref + "Approval" + worker.Approval);
-        }
-        else
-        {
-            worker.pref = false;
-            Debug.Log(worker.characterName + " " + worker.pref);
+            PlayerPrefs.SetInt("pref" + worker.characterName, 1);
         }
         return resources;
     }
