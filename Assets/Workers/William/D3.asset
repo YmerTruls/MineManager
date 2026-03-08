@@ -9,17 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5e1d1ac9c0f83438e1fae6000fc660, type: 3}
-  m_Name: William Hammer
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D3
   m_EditorClassIdentifier: 
-  characterName: William Hammer
-  WorkerId: 2
-  portrait: {fileID: 6806288595276267877, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 8
-  dialog: '''Ello there! We have''t been introduced right? T''name''s William. William
+  day: 2
+  text: '''Ello there! We have''t been introduced right? T''name''s William. William
     Hammer. You''ve probably met my brother Edvin right? Look I know he can be difficult
     but he''s a good man. Listen to him. He wants ya to do good. And he wants all
     of us to survive.'
-  DialogData:
-  - {fileID: 11400000, guid: a617ce42086b19e4b9cd2165104534f5, type: 2}
-  currentDialog: {fileID: 0}
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 0}

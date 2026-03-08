@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D3
+  m_Name: D3C
   m_EditorClassIdentifier: 
   day: 2
-  text: "They uppin\u2019 the quota everyday, huh? Listen, You wanna survive down
-    \u2018ere you gotta be all adaptable but you also gotta choose. The others all
-    will give you these requests, you gotta make the decision on who you want to
-    see at the end of the week. Follow all of \u2018em and you\u2019re gonna fail
-    your quota. So pick and choose who you like and don\u2019t pick me."
+  text: "You got a problem with me don\u2019t you? Now, I can either make your life
+    easier or harder, that\u2019s up to you. Maybe you don\u2019t wanna survive here,
+    is that it? Have they given us one of those Steelheart freaks? Or you just don\u2019t
+    know that if you keep fucking up they gonna turn you into something like Emma.
+    Or should I say F11, that\u2019s what it was called before.  "
   approval: 0
   pref: 0
   cavePref: {fileID: 0}

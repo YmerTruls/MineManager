@@ -20,3 +20,6 @@ MonoBehaviour:
     the grasping of air came from a being more steel than flesh. It shuffle towards
     your desk, hunched and stiff. From it a screech emerged, it sounded as the cry
     of dying beast* ASSIGN ME. ASSIGN ME. ASSIGN ME. ASSIGN ME.'
+  DialogData:
+  - {fileID: 11400000, guid: 2d8d157318ba9804e97198a2b41feb9d, type: 2}
+  currentDialog: {fileID: 0}
