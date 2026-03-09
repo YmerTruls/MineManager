@@ -69,6 +69,11 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MainTheme
     clip: {fileID: 8300000, guid: 419bd9bcfdaad374cb06654c6fce667f, type: 3}
-    volume: 0.1
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Ambiance
+    clip: {fileID: 8300000, guid: e06df5c714c263946b24bf2b01a55fb1, type: 3}
+    volume: 1
     pitch: 1
     source: {fileID: 0}
