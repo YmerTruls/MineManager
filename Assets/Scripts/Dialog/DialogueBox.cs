@@ -114,8 +114,6 @@ public class DialogueBox : MonoBehaviour
 
     public void SetText(string text)
     {
-        DisplayPage(1);
-
         if (_typeWriterCoroutine != null)
             StopCoroutine(_typeWriterCoroutine);
 
@@ -124,7 +122,8 @@ public class DialogueBox : MonoBehaviour
         _textBox.ForceMeshUpdate();
 
         _textBox.maxVisibleCharacters = 0;
-        _textBox.maxVisibleCharacters = 0;
+
+        DisplayPage(1);
 
         _typeWriterCoroutine = StartCoroutine(Typewriter());
     }
@@ -155,8 +154,7 @@ public class DialogueBox : MonoBehaviour
             }
         }
         // After all text is written, hide "fast forward" button
-        if (NextButton != null)
-            SetButtonActive(NextButton, false);
+      
         if (MenuButton != null)
             MenuButton.SetActive(true);
     }
