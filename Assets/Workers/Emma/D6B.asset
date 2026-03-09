@@ -10,14 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D6A
+  m_Name: D6B
   m_EditorClassIdentifier: 
   day: 5
-  text: "*Elsa confidently struts toward the desk* Greetings to you, F12. Yesterday
-    was an\u2026 experience, one that I will definitely save in my memory banks.
-    It's been a pleasure working with such an exemplary specimen this week, I look
-    forward to keep working for you."
+  text: '*The creature approaches you as normal* ASSIGN ME. ASSIGN ME. ASSIGN ME. '
   approval: 0
-  pref: 1
+  pref: 0
   cavePref: {fileID: 0}
-  dead: 0
+  dead: 1

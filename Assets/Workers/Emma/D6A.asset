@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: D6A
   m_EditorClassIdentifier: 
   day: 5
-  text: "*Elsa confidently struts toward the desk* Greetings to you, F12. Yesterday
-    was an\u2026 experience, one that I will definitely save in my memory banks.
-    It's been a pleasure working with such an exemplary specimen this week, I look
-    forward to keep working for you."
+  text: '*The creature stands before you as it does everyday, but you notice something
+    odd about it* Thank you. You saved him. *A woman''s voice can be heard from its
+    lips. They moved, they actually moved. For a moment you think you''re going insane.
+    It can speak normally? What madness is this? Was this actually a person? You
+    had heard the rumours but for them to actually be true?* ASSIGN ME. ASSIGN ME
+    ASSIGN ME. '
   approval: 0
-  pref: 1
+  pref: 0
   cavePref: {fileID: 0}
   dead: 0
