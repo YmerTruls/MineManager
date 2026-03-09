@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79650d2716ee27449e29279f20ff220, type: 3}
   m_Name: Day 6A
   m_EditorClassIdentifier: 
-  message: 
+  message: Attention all workers. If you know of any un-productive workers, report
+    them immediately to your designated Compliance-productivity-Officer. In other
+    news, C1 is now available to you, F12! While it is not the most valueble mineshaft
+    in any one mineral, it does contain all of them! The Blessed-Shareholders also
+    want to report that the next quarterly looks to be a bountiful one. Remember
+    to praise your Sharholders!
   day: 5

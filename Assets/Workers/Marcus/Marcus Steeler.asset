@@ -19,4 +19,8 @@ MonoBehaviour:
   dialog: 
   DialogData:
   - {fileID: 11400000, guid: d9958a76f3db81543a40c96b2668c432, type: 2}
+  - {fileID: 11400000, guid: 6eb5d8b46de52f74693e0bdb6f06c673, type: 2}
+  - {fileID: 11400000, guid: a2cd50ab790191b4b975ac237cba45ae, type: 2}
+  - {fileID: 11400000, guid: 934417bb1ff67e148a57416eafee7d9f, type: 2}
+  - {fileID: 11400000, guid: 55d92c20b7cfcc64a80fd64124e01f04, type: 2}
   currentDialog: {fileID: 0}

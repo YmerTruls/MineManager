@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D6A
+  m_EditorClassIdentifier: 
+  day: 5
+  text: '*The creature stands before you as it does everyday, but you notice something
+    odd about it* Thank you. You saved him. *A woman''s voice can be heard from its
+    lips. They moved, they actually moved. For a moment you think you''re going insane.
+    It can speak normally? What madness is this? Was this actually a person? You
+    had heard the rumours but for them to actually be true?* ASSIGN ME. ASSIGN ME
+    ASSIGN ME. '
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 0}
+  dead: 0

@@ -5248,7 +5248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: goalQuota.Array.size
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: 'AllCaves.Array.data[3]'
@@ -5262,6 +5262,10 @@ PrefabInstance:
       propertyPath: 'AllCaves.Array.data[5]'
       value: 
       objectReference: {fileID: 11400000, guid: 089797f070fa2544883e977455167d42, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: DataMessage.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: 'goalQuota.Array.data[4]'
       value: 
@@ -5278,6 +5282,22 @@ PrefabInstance:
       propertyPath: 'goalQuota.Array.data[7]'
       value: 
       objectReference: {fileID: 11400000, guid: 54b27ad14cb8674429f357e29754bd15, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bfc058eb33c66884e85697c1876b2d0f, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b1f43446e2d1694f86f921b554196b4, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 010242d2d91b8c84a9590216f3246717, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 6ec7653112a205b458afd529318820b2, type: 2}
     - target: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: m_Name
       value: GameManager

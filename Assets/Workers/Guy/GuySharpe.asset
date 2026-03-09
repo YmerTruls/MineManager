@@ -32,4 +32,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3508cd82e8debb44e8fff4d04ed387a2, type: 2}
   - {fileID: 11400000, guid: 19b2a62450de666418eebd07f90f4ec9, type: 2}
   - {fileID: 11400000, guid: 7aa084ba0fc03884ab360efa79d5f1d6, type: 2}
+  - {fileID: 11400000, guid: f8087a7b2e9487348b5b4705e1911014, type: 2}
+  - {fileID: 11400000, guid: 5b4b27abf254ce645a718ae681c3bc89, type: 2}
+  - {fileID: 11400000, guid: 3b4ead12b6ca4ee4eb8f9f1be61ff52f, type: 2}
+  - {fileID: 11400000, guid: ea8a30e481e558045ac8ade641dd7a1f, type: 2}
+  - {fileID: 11400000, guid: 58b0a65b2d527824a80c01155a233fea, type: 2}
+  - {fileID: 11400000, guid: e265d4e1245b11d4a97223fa2ee0ec54, type: 2}
+  - {fileID: 11400000, guid: fe57ed23af07e7e429d996af47970adb, type: 2}
+  - {fileID: 11400000, guid: c7f166fdd3086aa47a717b6ab17ecdd9, type: 2}
   currentDialog: {fileID: 0}

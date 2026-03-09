@@ -24,6 +24,11 @@ public class CaveManager
             int CurrentApproval = PlayerPrefs.GetInt(worker.characterName);
             PlayerPrefs.SetInt(worker.characterName, CurrentApproval + 1);
             PlayerPrefs.SetInt("pref" + worker.characterName, 1);
+            if (worker.characterName == "Edvin Hammer")
+            {
+                PlayerPrefs.SetInt("Dead", 1);
+                Debug.Log("Removed");
+            }
         }
         return resources;
     }
