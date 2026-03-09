@@ -52,34 +52,35 @@ public class GameManager : MonoBehaviour
                     workmanager.AddWorker(worker);
                     Debug.Log(worker.characterName + "  Added");
                 }
-                else
+                foreach (DialogData dialog in worker.DialogData)
                 {
-                    PlayerPrefs.SetInt("Dead", 1);
-                }
-                foreach(DialogData dialog in worker.DialogData) {
                     if (PlayerPrefs.GetInt("pref" + worker.characterName, 0) == dialog.pref && daycount == dialog.day)
                     {
                         int approval = PlayerPrefs.GetInt(worker.characterName);
                         Debug.Log(PlayerPrefs.GetInt("pref" + worker.characterName, 0) + "  " + worker.characterName);
                         if (approval >= dialog.approval)
                         {
-                            if (dialog.dead == 1)
+                            if (PlayerPrefs.GetInt("Dead", 0) == 1)
                             {
-                                worker.dialog = dialog.text;
-                                worker.currentDialog = dialog;
+                                if (dialog.dead == 1)
+                                {
+                                    worker.dialog = dialog.text;
+                                    worker.currentDialog = dialog;
+                                }
                             }
-                           if (dialog.dead == 0)
+                            else
                             {
-                                worker.dialog = dialog.text;
-                                worker.currentDialog = dialog;
+                                if (dialog.dead == 0)
+                                {
+                                    worker.dialog = dialog.text;
+                                    worker.currentDialog = dialog;
+                                }
                             }
-                          
-
                         }
                     }
                 }
+                PlayerPrefs.SetInt("pref" + worker.characterName, 0);
             }
-            PlayerPrefs.SetInt("pref" + worker.characterName, 0);
         }
         foreach (CaveData caves in AllCaves)
         {

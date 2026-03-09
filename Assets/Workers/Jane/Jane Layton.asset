@@ -21,4 +21,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c53cbb792b09aae4cabca7d278bab09c, type: 2}
   - {fileID: 11400000, guid: 7bced6f3602703f48a699e2686eb7066, type: 2}
   - {fileID: 11400000, guid: 1c7f3b8efb1f88841b90830fd4132c5f, type: 2}
+  - {fileID: 11400000, guid: 8bab7812954e30c4aa8992a0b9a339c0, type: 2}
+  - {fileID: 11400000, guid: 897ca53d5ee515a4b9a3c8835b869687, type: 2}
   currentDialog: {fileID: 0}
