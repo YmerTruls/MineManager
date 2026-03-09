@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Marcus Steeler
   m_EditorClassIdentifier: 
   characterName: Marcus Steeler
-  WorkerId: 6
+  WorkerId: 4
   portrait: {fileID: 5757624654330203657, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 14
   dialog: 
+  DialogData: []
+  currentDialog: {fileID: 0}

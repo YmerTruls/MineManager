@@ -10,5 +10,7 @@ public class WorkerData : ScriptableObject
     public Sprite portrait;
     public float experience;
     public string dialog;
+    public List<DialogData> DialogData;
+    public DialogData currentDialog;
     //public Ass default;
 }

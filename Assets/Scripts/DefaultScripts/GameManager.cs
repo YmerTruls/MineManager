@@ -48,25 +48,32 @@ public class GameManager : MonoBehaviour
             if (worker.WorkerId <= daycount)
             {
                 workmanager.AddWorker(worker);
+                foreach(DialogData dialog in worker.DialogData) {
+                    if (PlayerPrefs.GetInt("pref" + worker.characterName, 0) == dialog.pref && daycount == dialog.day)
+                    {
+                        int approval = PlayerPrefs.GetInt(worker.characterName);
+                        Debug.Log(PlayerPrefs.GetInt("pref" + worker.characterName, 0) + "  " + worker.characterName);
+                        if (approval >= dialog.approval)
+                        {
+                            worker.dialog = dialog.text;
+                            worker.currentDialog = dialog;
+                        }
+                    }
+                }
             }
+            PlayerPrefs.SetInt("pref" + worker.characterName, 0);
         }
         foreach (CaveData caves in AllCaves)
         {
             if (caves.CaveId <= daycount)
             {
-
+                mineDropDown.addCave(caves);
             }
         }
 
         
  
     }
-
-    public void setWorkerDialoug(WorkerData worker)
-    {
-
-    }
-
     public void NextWorker(){
         workmanager.NextWorker();
     }
@@ -92,6 +99,7 @@ public class GameManager : MonoBehaviour
                 totalResources.Add(key, value);
             }
         }
+
         //AudioManager.Instance.Play("PickSound");
         workmanager.ClearWorker();
     }

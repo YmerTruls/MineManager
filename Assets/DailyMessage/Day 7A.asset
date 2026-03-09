@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d79650d2716ee27449e29279f20ff220, type: 3}
-  m_Name: Day 7
+  m_Name: Day 7A
   m_EditorClassIdentifier: 
   message: '"Greetings Foreman F12! Welcome to the M.I.N.E. Corp mining operation!
     \n" +             "To settle in to your new position, we are only giving you

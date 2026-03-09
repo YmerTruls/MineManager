@@ -3338,9 +3338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 2482760119877725718}
-  Caves:
-  - {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
-  - {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
 --- !u!114 &3509003235714846857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5151,6 +5148,22 @@ PrefabInstance:
       propertyPath: mineDropDown
       value: 
       objectReference: {fileID: 3381052692645802736}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: goalQuota.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 35d120a7dc1139f4a857c7d132b8b9cc, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c19ffab443449ec43810d50c973864f7, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f51c094c2f89d064bae93d06f27e6ef7, type: 2}
     - target: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: m_Name
       value: GameManager
