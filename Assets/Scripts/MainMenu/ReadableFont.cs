@@ -57,10 +57,29 @@ public class ReadableFont : MonoBehaviour
             {
                  GameObject.Find("EndOfDayCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             }
+            else if (SceneManager.GetActiveScene().name == "EndingScene")
+            {
+                GameObject.Find("EndingCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            }
         }
         else
         {
-            GameObject.Find("Canvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            if (SceneManager.GetActiveScene().name == "MainMenuScene")
+            {
+                GameObject.Find("Canvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            }
+            else if (SceneManager.GetActiveScene().name == "GameScene")
+            {
+                GameObject.Find("FormCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            }
+            else if (SceneManager.GetActiveScene().name == "EndOfDayScreen")
+            {
+                GameObject.Find("EndOfDayCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            }
+            else if (SceneManager.GetActiveScene().name == "EndingScene")
+            {
+                GameObject.Find("EndingCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+            }
         }
     }
 
