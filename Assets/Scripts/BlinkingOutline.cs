@@ -10,7 +10,6 @@ public class BlinkingOutline : MonoBehaviour
     void Update()
     {
         float uptime = Time.time;
-        Debug.Log(uptime);
 
         if ((int)(uptime * speed) % 2 == 1)
         {
