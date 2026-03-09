@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ore: {fileID: 11400000, guid: 81593c264056fc04b9989bcc3701d38d, type: 2}
   OreCount: 10
-  ID: 0
+  ID: 5
