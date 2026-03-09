@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 908345337}
   - component: {fileID: 908345341}
   m_Layer: 5
-  m_Name: Result text
+  m_Name: Ending text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,10 +470,7 @@ MonoBehaviour:
 
 
     Go and play
-    outside.
-
-
-    Bye bye.'
+    outside.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 83c70aabf5a65444c931df775545bde3, type: 2}
   m_sharedMaterial: {fileID: 7912789105194185261, guid: 83c70aabf5a65444c931df775545bde3, type: 2}
