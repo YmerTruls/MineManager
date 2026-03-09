@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D4B
+  m_Name: D5A
   m_EditorClassIdentifier: 
-  day: 3
-  text: "*Robert walks up to you seemingly unaware of your presence. Then, as if
-    woken up he jumps* AH! Oh, sorry boss, I didn't see you there. Didn\u2019t get
-    much sleep tonight. *Robert\u2019s eyes seem to drift to someplace else. After
-    a while in silence he once again focuses on you* Hey boss. Mind if I don't get
-    assigned to B1 today? "
+  day: 4
+  text: "I greet you, F12. By the steel, you may not be as weak as you seemed. I
+    appreciate your compliance in my request. Let this one request once more. I would
+    wish to work in B2 today. There is gold there that if not deemed qualified for
+    the quota can be harnessed for further upgrades. I could even offer you some
+    upgrades too if you\u2019d like. Meet me in my quarters after the shift."
   approval: 1
   pref: 1
   cavePref: {fileID: 11400000, guid: d1ef431f0e7efb74d990c78ec39a6f3f, type: 2}

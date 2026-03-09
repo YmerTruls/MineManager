@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D4
+  m_Script: {fileID: 11500000, guid: a6a4cbc6468e77548a3b689e838cc53f, type: 3}
+  m_Name: B3
   m_EditorClassIdentifier: 
-  day: 3
-  text: "They\u2019ve opened B2 now eh? Alright, send me there."
-  approval: 0
-  pref: 0
-  cavePref: {fileID: 0}
+  CaveName: B3
+  CaveId: 4
+  ResourceType:
+  - {fileID: 11400000, guid: 5ac28e34120020c418f5128b0fc61053, type: 2}
+  yield: 04000000

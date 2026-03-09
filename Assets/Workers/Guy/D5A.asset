@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D5A
+  m_EditorClassIdentifier: 
+  day: 4
+  text: "There\u2019s my favorite foreman! Alright, I got a tasty list for you here.
+    How every worker's performance has been in the past years. The list goes as follows:
+    1. Marcus Steeler, 2. Edvin Hammer, 3. Elsa Norden, 4. William Hammer, 5. Jane
+    Layton, 6. Robert Lampard. And there you have it! Now you can optimally assign
+    those meatheads. See? It pays off being friends with a guy like me."
+  approval: 4
+  pref: 1
+  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}

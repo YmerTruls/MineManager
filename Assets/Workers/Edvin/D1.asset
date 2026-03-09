@@ -19,4 +19,4 @@ MonoBehaviour:
     A1 unless you wanna end up like the guy before you.
   approval: 0
   pref: 0
-  cavePref: {fileID: 11400000, guid: a6d4b6d3d7c7de34284393cf1257e495, type: 2}
+  cavePref: {fileID: 0}
