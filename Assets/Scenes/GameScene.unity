@@ -1009,19 +1009,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.09322034
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.03760684
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.8135593
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1610737668660243297, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9230769
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3236299234315763727, guid: 5b944a9a5bf9c944eab6b39f07e3766d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3278,7 +3278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3008294351927558718
 RectTransform:
   m_ObjectHideFlags: 0
