@@ -11,6 +11,7 @@ public class DialogueBox : MonoBehaviour
     // Page info:
     [SerializeField] private GameObject NextButton;
     [SerializeField] private GameObject PreviousButton;
+    [SerializeField] private GameObject MenuButton;
     private int dialogPage = 1;
 
     // Basic Typewriter Functionality
@@ -154,6 +155,9 @@ public class DialogueBox : MonoBehaviour
             }
         }
         // After all text is written, hide "fast forward" button
-        SetButtonActive(NextButton, false);
+        if (NextButton != null)
+            SetButtonActive(NextButton, false);
+        if (MenuButton != null)
+            MenuButton.SetActive(true);
     }
 }
