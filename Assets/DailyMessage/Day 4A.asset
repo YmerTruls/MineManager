@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79650d2716ee27449e29279f20ff220, type: 3}
   m_Name: Day 4A
   m_EditorClassIdentifier: 
-  message: 'Gold! We''ve struck gold! There is a gold rush and you just can not miss
+  message: Gold! We've struck gold! There is a gold rush and you just can not miss
     out! Our partners at the Peacekeeping and Law Agency has requested resources
-    for their latest efforts against the terrorist organisation the D.A.F.C. Their
+    for their latest efforts against the terrorist organization the D.A.F.C. Their
     evil democratic ways is a threat to your career! You can read more about it in
     the Happy and Motivated Workers guide in Chapter 6: What democracy does to you
-    and your productivity!'
+    and your productivity!
   day: 3
