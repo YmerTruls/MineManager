@@ -5,7 +5,6 @@ public class NextDay : MonoBehaviour
 {
     private int currentDay;
     public void nextDay() {
-        PlayerPrefs.SetInt("day", 5);
         currentDay = PlayerPrefs.GetInt("day");
 
         if (currentDay == 5)
