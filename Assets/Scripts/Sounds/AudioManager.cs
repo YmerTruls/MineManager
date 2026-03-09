@@ -61,6 +61,9 @@ public class AudioManager : MonoBehaviour
             case "EndOfDayScreen":
                 PlayMusic("MainTheme");
                 break;
+            case "EndingScene":
+                PlayMusic("MainTheme");
+                break;
             default:
                 break;
         }
@@ -72,6 +75,9 @@ public class AudioManager : MonoBehaviour
         {
             s.source.volume = s.volume * volume;
         }
+
+        if (musicSource != null)
+            musicSource.volume = volume;
     }
 
     public void Play(string name)
