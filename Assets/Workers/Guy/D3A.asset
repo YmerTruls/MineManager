@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D3A
+  m_EditorClassIdentifier: 
+  day: 2
+  text: "How\u2019s it going, big boss? Heard you were set up yesterday. Nothing
+    to worry about, they do that to everyone. \u201CTeach us a lesson\u201D or something
+    like that. Hey, you just keep doing what you do and everything\u2019s gonna be
+    alright. But I haven\u2019t forgotten about those tasty details. I can tell you
+    that the two best miners in this place are Marcus and Edvin. So if you want to
+    use the mine for their optimal output, send one of them in!"
+  approval: 2
+  pref: 1
+  cavePref: {fileID: 0}

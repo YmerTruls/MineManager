@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: D3
   m_EditorClassIdentifier: 
   day: 2
-  text: "They uppin\u2019 the quota everyday, huh? Listen, You wanna survive down
-    \u2018ere you gotta be all adaptable but you also gotta choose. The others all
-    will give you these requests, you gotta make the decision on who you want to
-    see at the end of the week. Follow all of \u2018em and you\u2019re gonna fail
-    your quota. So pick and choose who you like and don\u2019t pick me."
+  text: '*You here heavy footsteps echo towards you. The whir of machinery and the
+    grasping of air came from a being more steel than flesh. It shuffle towards your
+    desk, hunched and stiff. From it a screech emerged, it sounded as the cry of
+    dying beast* ASSIGN ME. ASSIGN ME. ASSIGN ME. ASSIGN ME.'
   approval: 0
   pref: 0
   cavePref: {fileID: 0}

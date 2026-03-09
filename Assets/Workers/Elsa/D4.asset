@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D4
+  m_EditorClassIdentifier: 
+  day: 3
+  text: 'Salutations, F12. Of course, a weak one like you fits the role of supervisor.
+    My fingers have not fully gotten used to their upgrade and as such my ability
+    to work with power-tools is lacking at the moment. I would request you to send
+    me to B1. Iron only needs a pickaxe and raw strength. '
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: D3
   m_EditorClassIdentifier: 
   day: 2
-  text: "They uppin\u2019 the quota everyday, huh? Listen, You wanna survive down
-    \u2018ere you gotta be all adaptable but you also gotta choose. The others all
-    will give you these requests, you gotta make the decision on who you want to
-    see at the end of the week. Follow all of \u2018em and you\u2019re gonna fail
-    your quota. So pick and choose who you like and don\u2019t pick me."
+  text: "'Ello there! We have't been introduced right? T'name's William. William
+    Hammer. You've probably met my brother Edvin right? Look I know he can be difficult
+    but he's a good man. Listen to him. He wants ya to do good. And he wants all
+    of us to survive. But that guy Sharpe? Do not trust him. He always tries to worm
+    his way into A2, only because there is less work to be done there and less minerals
+    \xF6verall."
   approval: 0
   pref: 0
   cavePref: {fileID: 0}
