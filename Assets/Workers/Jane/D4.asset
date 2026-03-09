@@ -15,9 +15,9 @@ MonoBehaviour:
   day: 3
   text: "Greetings, sir. Jane reporting for duty! As you\u2019ve noticed, I worked
     for the P.L.A. before this, sir! I am more experienced with the extraction of
-    hard metals, sir! If my constant use of \"sir\" is upsetting to you then I apologize,
-    sir! The P.L.A. gives us extensive behavioural conditioning to ensure proper
-    etiquette and our compliance, sir! "
+    hard metals, sir! If my constant use of \u201Csir\u201D is upsetting to you then
+    I apologize, sir! The P.L.A. gives us extensive behavioural conditioning to ensure
+    proper etiquette and our compliance, sir! "
   approval: 0
   pref: 0
   cavePref: {fileID: 11400000, guid: d1ef431f0e7efb74d990c78ec39a6f3f, type: 2}

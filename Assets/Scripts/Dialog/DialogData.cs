@@ -8,5 +8,6 @@ public class DialogData : ScriptableObject
     public int approval;
     public int pref;
     public CaveData cavePref;
+    public int dead;
     
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: D5B
   m_EditorClassIdentifier: 
   day: 4
-  text: '"Hello" as they say, F12. I await my assignment.'
+  text: "\u201CHello\u201D as they say, F12. I await my assignment."
   approval: 0
   pref: 0
   cavePref: {fileID: 0}
