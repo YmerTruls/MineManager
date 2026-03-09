@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D5C
+  m_Name: D6A
   m_EditorClassIdentifier: 
-  day: 4
-  text: '*Sharpe approaches you without a word. He eyes with contempt, tapping his
-    fingers on his arms, awaiting his assignment*'
+  day: 0
+  text: 
   approval: 0
   pref: 0
-  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}
+  cavePref: {fileID: 0}
+  dead: 0
