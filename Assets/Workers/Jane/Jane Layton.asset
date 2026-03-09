@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: Jane Layton
   m_EditorClassIdentifier: 
   characterName: Jane Layton
-  WorkerId: 4
+  WorkerId: 3
   portrait: {fileID: 4540777330734752197, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 6
   dialog: 
+  DialogData:
+  - {fileID: 11400000, guid: c53cbb792b09aae4cabca7d278bab09c, type: 2}
+  - {fileID: 11400000, guid: 7bced6f3602703f48a699e2686eb7066, type: 2}
+  - {fileID: 11400000, guid: 1c7f3b8efb1f88841b90830fd4132c5f, type: 2}
+  currentDialog: {fileID: 0}

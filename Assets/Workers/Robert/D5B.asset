@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D4
+  m_Name: D5B
   m_EditorClassIdentifier: 
-  day: 3
-  text: "*The Creature approaches you with slow, rhythmic thudding as it drags its
-    metallic feet across the floor. You notice something interesting about its torn
-    up shirt. A small name tag. \u201CF11\u201D. ASSIGN ME. ASSIGN ME. ASSIGN ME.
-    ASSIGN ME."
-  approval: 0
-  pref: 0
-  cavePref: {fileID: 0}
+  day: 4
+  text: "Hey, boss. I-I'm sorry if I've offended you or anything like that. Can I
+    make it up to you? Please, the dark does things to me. I don\u2019t want to work
+    in B1, please."
+  approval: 1
+  pref: 1
+  cavePref: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}

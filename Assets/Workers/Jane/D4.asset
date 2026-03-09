@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D4B
+  m_Name: D4
   m_EditorClassIdentifier: 
   day: 3
-  text: "*Robert walks up to you seemingly unaware of your presence. Then, as if
-    woken up he jumps* AH! Oh, sorry boss, I didn't see you there. Didn\u2019t get
-    much sleep tonight. *Robert\u2019s eyes seem to drift to someplace else. After
-    a while in silence he once again focuses on you* Hey boss. Mind if I don't get
-    assigned to B1 today? "
-  approval: 1
-  pref: 1
+  text: "Greetings, sir. Jane reporting for duty! As you\u2019ve noticed, I worked
+    for the P.L.A. before this, sir! I am more experienced with the extraction of
+    hard metals, sir! If my constant use of \u201Csir\u201D is upsetting to you then
+    I apologize, sir! The P.L.A. gives us extensive behavioural conditioning to ensure
+    proper etiquette and our compliance, sir! "
+  approval: 0
+  pref: 0
   cavePref: {fileID: 11400000, guid: d1ef431f0e7efb74d990c78ec39a6f3f, type: 2}

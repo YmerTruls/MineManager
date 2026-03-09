@@ -24,4 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 179e2f58e6edd2c4db510ca88f5e433d, type: 2}
   - {fileID: 11400000, guid: b7dd0bcf7c46e794faf9fa65b9c51373, type: 2}
   - {fileID: 11400000, guid: 99a0368d993f2ff4890ddf543679c6f4, type: 2}
+  - {fileID: 11400000, guid: 2dbeb421ba3a0fe42b48439dcf80ee7c, type: 2}
+  - {fileID: 11400000, guid: 27544a5d1de43dd4a973358a7763916a, type: 2}
+  - {fileID: 11400000, guid: 8b8de4519ee839d4e8700f7cd1762708, type: 2}
   currentDialog: {fileID: 11400000, guid: 1c6cd4027efa6554a8c61d0bae23ffb6, type: 2}

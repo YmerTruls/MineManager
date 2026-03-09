@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D4
+  m_Name: D5
   m_EditorClassIdentifier: 
-  day: 3
-  text: "*The Creature approaches you with slow, rhythmic thudding as it drags its
-    metallic feet across the floor. You notice something interesting about its torn
-    up shirt. A small name tag. \u201CF11\u201D. ASSIGN ME. ASSIGN ME. ASSIGN ME.
-    ASSIGN ME."
+  day: 4
+  text: "They\u2019ve opened B3 again? No no no no no no they can\u2019t! That damn
+    hell hole is a death trap! Don\u2019t you dare send me there. Don\u2019t you
+    fucking dare!"
   approval: 0
   pref: 0
-  cavePref: {fileID: 0}
+  cavePref: {fileID: 11400000, guid: c605de93f1e443e45b5b039dcc186108, type: 2}

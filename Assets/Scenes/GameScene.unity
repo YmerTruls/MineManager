@@ -5149,9 +5149,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3381052692645802736}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
-      propertyPath: goalQuota.Array.size
-      value: 7
+      propertyPath: AllCaves.Array.size
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: goalQuota.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d1ef431f0e7efb74d990c78ec39a6f3f, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: c605de93f1e443e45b5b039dcc186108, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'AllCaves.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 089797f070fa2544883e977455167d42, type: 2}
     - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: 'goalQuota.Array.data[4]'
       value: 
@@ -5164,6 +5180,10 @@ PrefabInstance:
       propertyPath: 'goalQuota.Array.data[6]'
       value: 
       objectReference: {fileID: 11400000, guid: f51c094c2f89d064bae93d06f27e6ef7, type: 2}
+    - target: {fileID: 1957759154468754591, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
+      propertyPath: 'goalQuota.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 54b27ad14cb8674429f357e29754bd15, type: 2}
     - target: {fileID: 6340927535397695598, guid: fa906a49ed12daa4daead0bd26c71f18, type: 3}
       propertyPath: m_Name
       value: GameManager

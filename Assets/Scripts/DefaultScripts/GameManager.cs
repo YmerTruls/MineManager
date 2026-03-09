@@ -47,7 +47,11 @@ public class GameManager : MonoBehaviour
         {
             if (worker.WorkerId <= daycount)
             {
-                workmanager.AddWorker(worker);
+                if (!(worker.characterName == "Edvin Hammer" && PlayerPrefs.GetInt("prefEdvin Hammer", 0) > 0))
+                {
+                    workmanager.AddWorker(worker);
+                    Debug.Log(worker.characterName + "  Added");
+                }
                 foreach(DialogData dialog in worker.DialogData) {
                     if (PlayerPrefs.GetInt("pref" + worker.characterName, 0) == dialog.pref && daycount == dialog.day)
                     {

@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     public void Awake()
     {
        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("prefEdvin Hammer", 0);
     }
 
     public void PlayGame()

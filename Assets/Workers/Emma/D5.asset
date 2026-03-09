@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D5
+  m_EditorClassIdentifier: 
+  day: 4
+  text: "*The creature approaches as it does everyday, but this time it stops by
+    a small bulletin board that hangs at the mine entrance. It seems to be\u2026
+    staring? There\u2019s a picture hanging there of all the workers and the previous
+    foreman F11. The creature seems to be leaking from its face, as a pool of water
+    forms beneath it. Should probably get Elsa to take a look at it. Wouldn\u2019t
+    be good if we had a malfunction in the middle of shift*"
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 0}

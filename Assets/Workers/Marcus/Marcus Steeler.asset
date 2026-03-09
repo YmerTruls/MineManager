@@ -17,5 +17,6 @@ MonoBehaviour:
   portrait: {fileID: 5757624654330203657, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 14
   dialog: 
-  DialogData: []
+  DialogData:
+  - {fileID: 11400000, guid: d9958a76f3db81543a40c96b2668c432, type: 2}
   currentDialog: {fileID: 0}
