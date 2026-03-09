@@ -45,7 +45,11 @@ public class ReadableFont : MonoBehaviour
 
         if (!usePixel)
         {
-            if (SceneManager.GetActiveScene().name == "GameScene")
+            if (SceneManager.GetActiveScene().name == "MainMenuScene")
+            {
+                GameObject.Find("Canvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            }
+            else if (SceneManager.GetActiveScene().name == "GameScene")
             {
                 GameObject.Find("FormCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             }
@@ -53,6 +57,10 @@ public class ReadableFont : MonoBehaviour
             {
                  GameObject.Find("EndOfDayCanvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             }
+        }
+        else
+        {
+            GameObject.Find("Canvas").GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
         }
     }
 
