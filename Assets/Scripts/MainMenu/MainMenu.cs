@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("prefEdvin Hammer", 0);
         SceneManager.LoadSceneAsync("GameScene");
     }
 

@@ -9,7 +9,6 @@ public class ResultText : MonoBehaviour
     public void Awake()
     {
         text.text += "Your performance has decided the fate of the workers.\n\n";
-        PlayerPrefs.SetInt("fail", 5);
 
         int fails = PlayerPrefs.GetInt("fail");
         int Edvin = PlayerPrefs.GetInt("Dead");
