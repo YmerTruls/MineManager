@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D2B
+  m_EditorClassIdentifier: 
+  day: 1
+  text: "Morning\u2026 Ah you\u2019re whats-his-face. Sorry, bumped my head a lot
+    yesterday and seems something broke in my noggin. Now, you\u2019re new. So I
+    won\u2019t hold yesterday\u2019s decisions against you. But this will be a lot
+    easier for the both of us if you just listen to me. I said I wanted to go to
+    A2. You send me to A2. That way, you and I\u2019ll be friends. Trust me, you
+    want me as a friend."
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}

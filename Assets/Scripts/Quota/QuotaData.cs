@@ -6,4 +6,5 @@ public class QuotaData : ScriptableObject
 {
     public OreData Ore;
     public int OreCount;
+    public int ID;
 }

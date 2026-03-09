@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79650d2716ee27449e29279f20ff220, type: 3}
   m_Name: Day 3
   m_EditorClassIdentifier: 
-  message: 
+  message: We hope this finds you well. The performance of yesterdays excavation
+    left us feeling dissappointed. We do hope that failure such as this was a one-time
+    occurence. We would really hate to liquidate you so for our sake, DO NOT FAIL
+    AGAIN. In another note, we have opened MineShaft B1 today. Remember to fufill
+    the quota!
   day: 2

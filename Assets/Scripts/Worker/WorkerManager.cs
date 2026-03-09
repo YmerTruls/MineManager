@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class WorkerManager : MonoBehaviour
 {
@@ -11,54 +13,71 @@ public class WorkerManager : MonoBehaviour
     [SerializeField] private WorkerView view;
     [SerializeField] private CaveManager cavemanager;
     [SerializeField] private GameObject endDayButton;
-
-    [Header("Queue")]
-    [SerializeField] private List<WorkerData> initialQueue = new List<WorkerData>();
-
-    private Queue<WorkerData> queue;
+    private Queue<WorkerData> queue = new Queue<WorkerData>();
 
     private void Awake()
     {
-        queue = new Queue<WorkerData>(initialQueue);
+
     }
 
     private void Start()
     {
-        ClearWorker();
+        dialogueManager.HideDialog();
+        activeWorker = null;
+        nextButton.SetActive(true);
     }
 
     public WorkerData GetActiveWorker() => activeWorker;
     public void NextWorker()
-    {   
-
-        WorkerData next = queue.Dequeue();
-
-        SetWorker(next);
-        nextButton.SetActive(false);
-        dialogueManager.ShowDialogue(next.dialog);
+    {
+        StartCoroutine(NextWorkerRoutine());
     }
 
-    public void SetWorker(WorkerData worker)
-    {
-        view.Show(worker);
-        activeWorker = worker;
+    private IEnumerator NextWorkerRoutine() { 
+        
+        nextButton.SetActive(false);
+        WorkerData next = queue.Dequeue();
+        view.Show(next);
 
+
+        // Worker Enter
+        yield return StartCoroutine(
+            view.CharacterMovement(new Vector3(-1.9f, -0.03f, 0), new Vector3(0, -0.03f, 0))
+        );
+
+
+        activeWorker = next;
+        dialogueManager.ShowDialogue(next.dialog);
     }
 
     public void ClearWorker()
     {
+        activeWorker = null;
         dialogueManager.HideDialog();
+
+        StartCoroutine(ClearWorkerRoutine());
+    }
+
+    private IEnumerator ClearWorkerRoutine()
+    {
+        // Worker Exit
+        yield return StartCoroutine(
+            view.CharacterMovement(new Vector3(0, -0.03f, 0), new Vector3(1.9f, -0.03f, 0))
+        );
+
         if (queue.Count == 0)
         {
-            view.Hide();
             nextButton.SetActive(false);
             endDayButton.SetActive(true);
-            return;
         }
-        view.Hide();
-        activeWorker = null;
-        nextButton.SetActive(true);
+        else
+        {
+            activeWorker = null;
+            nextButton.SetActive(true);
+        }
+
     }
+
     public void AddWorker(WorkerData worker)
     {
         queue.Enqueue(worker);

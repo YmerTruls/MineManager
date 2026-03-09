@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a4cbc6468e77548a3b689e838cc53f, type: 3}
+  m_Name: B2
+  m_EditorClassIdentifier: 
+  CaveName: B2
+  CaveId: 2
+  ResourceType:
+  - {fileID: 11400000, guid: b78d5ecd4a1c4d640bd15380ba1ea330, type: 2}
+  - {fileID: 11400000, guid: c8d04504a1862ba4b896b6ddc652722d, type: 2}
+  - {fileID: 11400000, guid: 81593c264056fc04b9989bcc3701d38d, type: 2}
+  yield: 050000000100000003000000

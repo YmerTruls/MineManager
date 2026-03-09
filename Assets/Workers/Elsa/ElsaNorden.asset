@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: ElsaNorden
   m_EditorClassIdentifier: 
   characterName: Elsa Norden
-  WorkerId: 2
-  portrait: {fileID: 0}
+  WorkerId: 3
+  portrait: {fileID: 8515794978630397066, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 8
   dialog: 
+  DialogData: []
+  currentDialog: {fileID: 11400000, guid: 0a32b7c06151ecc41a59d993f7f55f10, type: 2}

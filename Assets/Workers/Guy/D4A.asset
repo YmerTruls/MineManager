@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D4A
+  m_EditorClassIdentifier: 
+  day: 3
+  text: "Big boss. As per our deal I\u2019ll tell you something you\u2019d really
+    wanna know. Robert is a murderer. That\u2019s right. That timid little man has
+    got secrets, he doesn\u2019t want to be in B1 because of the dark. That\u2019s
+    at least what he tells you. In reality he\u2019s afraid of what he did in the
+    dark. I think you should remind him. A murderer does not deserve kindness, don't
+    you think?"
+  approval: 0
+  pref: 1
+  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}

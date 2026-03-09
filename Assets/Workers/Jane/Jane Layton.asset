@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Jane Layton
   WorkerId: 4
-  portrait: {fileID: 0}
+  portrait: {fileID: 4540777330734752197, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 6
   dialog: 

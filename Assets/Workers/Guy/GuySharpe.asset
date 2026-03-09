@@ -13,9 +13,19 @@ MonoBehaviour:
   m_Name: GuySharpe
   m_EditorClassIdentifier: 
   characterName: Guy Sharpe
-  WorkerId: 1
+  WorkerId: 0
   portrait: {fileID: -123883647285170024, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
-  experience: 6
+  experience: 5
   dialog: Morning. Hey you're a new face! Pleasure to meet you, most folk call me
     Sharpe around here. Hey, can you send med to A2? I know there's less coal there
     but it has a higher cave ceiling. I would really appreciate it.
+  DialogData:
+  - {fileID: 11400000, guid: f4c0d28e043e3194ca7c389257b8d3f3, type: 2}
+  - {fileID: 11400000, guid: 0ef94811e3322c546986a7ae10588e1c, type: 2}
+  - {fileID: 11400000, guid: 2497546647518534eba4dc360b84c3d2, type: 2}
+  - {fileID: 11400000, guid: 17e3040a4c71f8f43b1213feb7a37cd8, type: 2}
+  - {fileID: 11400000, guid: fa5435addfa2a1846b72a910febda954, type: 2}
+  - {fileID: 11400000, guid: 8873e8d59d41e98409f6e7bc588cde36, type: 2}
+  - {fileID: 11400000, guid: cc3586d1cffcb8e4e9edf11661f11922, type: 2}
+  - {fileID: 11400000, guid: 0d9e76f3c854a3947841a2004ca8fa37, type: 2}
+  currentDialog: {fileID: 0}

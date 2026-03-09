@@ -13,7 +13,14 @@ MonoBehaviour:
   m_Name: William Hammer
   m_EditorClassIdentifier: 
   characterName: William Hammer
-  WorkerId: 3
-  portrait: {fileID: 0}
+  WorkerId: 2
+  portrait: {fileID: 6806288595276267877, guid: 9ae6dc508789a344ea8ff26ced171111, type: 3}
   experience: 8
-  dialog: 
+  dialog: '''Ello there! We have''t been introduced right? T''name''s William. William
+    Hammer. You''ve probably met my brother Edvin right? Look I know he can be difficult
+    but he''s a good man. Listen to him. He wants ya to do good. And he wants all
+    of us to survive.'
+  DialogData:
+  - {fileID: 11400000, guid: a617ce42086b19e4b9cd2165104534f5, type: 2}
+  - {fileID: 11400000, guid: aef26a604edd1244d839d7414b904433, type: 2}
+  currentDialog: {fileID: 0}
