@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D4A
+  m_EditorClassIdentifier: 
+  day: 3
+  text: "Morning boss! Such a n-nice day isn\u2019t it? My wife packed me chicken-flavoured
+    rations today to celebrate a full week without panic attacks! You really helped
+    me out there, B2 is just too dark. I sometimes hear whispers there. I can\u2019t
+    tell if they\u2019re my own or someone else. "
+  approval: 1
+  pref: 1
+  cavePref: {fileID: 11400000, guid: 8da1ee1645f6a684ba455966c75372f1, type: 2}

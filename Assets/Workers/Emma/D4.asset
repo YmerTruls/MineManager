@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
-  m_Name: D3B
+  m_Name: D4
   m_EditorClassIdentifier: 
-  day: 2
-  text: "Good choice. Us being friends is something you won\u2019t regret. You just
-    keep sending me to A2 and all will be good. In exchange, I can give you information.
-    A small warning. B1 only has iron in it, so If you want coal, you better send
-    people to the A mines. And if you don\u2019t want coal? Well, send me anyway."
-  approval: 1
-  pref: 1
+  day: 3
+  text: 
+  approval: 0
+  pref: 0
   cavePref: {fileID: 0}

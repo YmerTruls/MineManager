@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec4bbe1af928ec4c9b2246f00e03d03, type: 3}
+  m_Name: D4B
+  m_EditorClassIdentifier: 
+  day: 3
+  text: "I\u2019ve got something interesting to tell you. B3. The mineshaft that
+    started it all. Your predecessor got fired because of it. It is the richest cave
+    out of all of them, but F11 refused to send anyone there, and as such she failed
+    to meet the quota. You can see for yourself what happens to you if that happens.
+    Just take a long, hard look at the creature \u201CEmma\u201D that you send to
+    the mines."
+  approval: 0
+  pref: 0
+  cavePref: {fileID: 11400000, guid: 0be96ceeea471324fb0b08e065c193b2, type: 2}

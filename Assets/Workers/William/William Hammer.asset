@@ -22,4 +22,5 @@ MonoBehaviour:
     of us to survive.'
   DialogData:
   - {fileID: 11400000, guid: a617ce42086b19e4b9cd2165104534f5, type: 2}
+  - {fileID: 11400000, guid: aef26a604edd1244d839d7414b904433, type: 2}
   currentDialog: {fileID: 0}
