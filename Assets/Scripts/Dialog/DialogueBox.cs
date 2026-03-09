@@ -30,8 +30,8 @@ public class DialogueBox : MonoBehaviour
     }
     void Start()
     {
-        //SetActive(false); ?? 
-        //SetText(_textBox.text);
+        if (_textBox.text != null)
+            SetText(_textBox.text);
     }
 
     void Update()
