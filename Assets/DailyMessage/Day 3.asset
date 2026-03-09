@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Day 3
   m_EditorClassIdentifier: 
   message: We hope this finds you well. The performance of yesterdays excavation
-    left us feeling dissappointed. We do hope that failure such as this was a one-time
-    occurence. We would really hate to liquidate you so for our sake, DO NOT FAIL
-    AGAIN. In another note, we have opened MineShaft B1 today. Remember to fufill
+    left us feeling disappointed. We do hope that failure such as this was a one-time
+    occurrence. We would really hate to liquidate you so for our sake, DO NOT FAIL
+    AGAIN. In another note, we have opened MineShaft B1 today. Remember to fulfill
     the quota!
   day: 2

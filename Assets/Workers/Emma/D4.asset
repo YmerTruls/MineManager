@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: D4
   m_EditorClassIdentifier: 
   day: 3
-  text: "*The Creature approaches you with slow, rhythmic thudding as it drags its
+  text: '*The Creature approaches you with slow, rhythmic thudding as it drags its
     metallic feet across the floor. You notice something interesting about its torn
-    up shirt. A small name tag. \u201CF11\u201D. ASSIGN ME. ASSIGN ME. ASSIGN ME.
-    ASSIGN ME."
+    up shirt. A small name tag. "F11". ASSIGN ME. ASSIGN ME. ASSIGN ME. ASSIGN ME.'
   approval: 0
   pref: 0
   cavePref: {fileID: 0}
