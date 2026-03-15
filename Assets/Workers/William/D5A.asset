@@ -21,4 +21,5 @@ MonoBehaviour:
     that thing. I know, send me instead!"
   approval: 1
   pref: 1
-  cavePref: {fileID: 11400000, guid: c605de93f1e443e45b5b039dcc186108, type: 2}
+  cavePref: {fileID: 0}
+  dead: 0
